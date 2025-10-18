@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://2kuf2tfvi0ju"]
+
+[ext_resource type="Script" uid="uid://8hvhjtd3fxc5" path="res://Scripts/sticker.gd" id="1_5v0uc"]
+[ext_resource type="Texture2D" uid="uid://bm4trbblfug22" path="res://icon.svg" id="2_vv667"]
+
+[node name="Sticker" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+pivot_offset = Vector2(62, 62)
+script = ExtResource("1_5v0uc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_vv667")
