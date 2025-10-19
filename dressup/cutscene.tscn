@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://uht06o48p8ai"]
+[gd_scene load_steps=9 format=3 uid="uid://uht06o48p8ai"]
 
 [ext_resource type="Script" uid="uid://nibnf651w232" path="res://Scripts/cutscene.gd" id="1_6thf7"]
 [ext_resource type="Texture2D" uid="uid://x7brjhsa4hu3" path="res://Assets/UI/charactersprites/adrienne_portrait_closedmouth.png" id="2_nii0h"]
 [ext_resource type="Texture2D" uid="uid://dr7bpjejh4c1f" path="res://Assets/UI/charactersprites/adrienne_portrait_open mouth.png" id="3_vb7vi"]
 [ext_resource type="Texture2D" uid="uid://lhjus3kj5r13" path="res://Assets/UI/charactersprites/soniaclosemouth.png" id="4_8unei"]
 [ext_resource type="Texture2D" uid="uid://vggga2qrls8p" path="res://Assets/UI/charactersprites/soniaopenmouth.PNG" id="5_gvbjd"]
+[ext_resource type="Texture2D" uid="uid://ml8sjm6uye47" path="res://Assets/UI/adriennebubble.png" id="6_gvbjd"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i2stj"]
 animations = [{
@@ -60,12 +61,14 @@ grow_vertical = 2
 script = ExtResource("1_6thf7")
 
 [node name="Adrienne" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(303, 917)
 scale = Vector2(0.916999, 0.916999)
 sprite_frames = SubResource("SpriteFrames_i2stj")
 animation = &"talk"
 
 [node name="Sonia" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(312, 933)
 sprite_frames = SubResource("SpriteFrames_8a47h")
 animation = &"talk"
@@ -104,6 +107,35 @@ offset_top = 109.0
 offset_right = 1078.0
 offset_bottom = 318.0
 
+[node name="Adrienne" type="TextureRect" parent="CharacterTextBox"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_gvbjd")
+expand_mode = 5
+
+[node name="Sonia" type="TextureRect" parent="CharacterTextBox"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Astor" type="TextureRect" parent="CharacterTextBox"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="CharacterText" type="RichTextLabel" parent="CharacterTextBox"]
 layout_mode = 1
 anchors_preset = 15
@@ -111,5 +143,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 horizontal_alignment = 1
 vertical_alignment = 1

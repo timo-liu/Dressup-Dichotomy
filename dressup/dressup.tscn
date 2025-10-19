@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dtja5gtt06hnx" path="res://dressup/dressup.gd" id="1_q3xi5"]
 [ext_resource type="Texture2D" uid="uid://idipobs7c5v4" path="res://Assets/Dolls/Adrienne/adridoll.png" id="2_qrpf1"]
-[ext_resource type="PackedScene" uid="uid://c3bddn7ght265" path="res://dressup/lockpoint.tscn" id="2_yygga"]
+[ext_resource type="PackedScene" path="res://dressup/lockpoint.tscn" id="2_yygga"]
 [ext_resource type="Texture2D" uid="uid://bld7h167top8j" path="res://Assets/Dolls/Adrienne/adrihair.png" id="3_0rlx7"]
 [ext_resource type="Texture2D" uid="uid://wp2qbh8anpra" path="res://Assets/UI/dressupui/topstab.png" id="4_qrpf1"]
 [ext_resource type="Texture2D" uid="uid://ikgi3djjbxtt" path="res://Assets/Dolls/Sonia/IMG_1306.PNG" id="5_oq87d"]
@@ -72,11 +72,11 @@ expand_mode = 1
 
 [node name="Shirt" parent="DressupDoll/Sonia" instance=ExtResource("2_yygga")]
 position = Vector2(237, 206)
-scale = Vector2(0.48000002, 0.48000002)
+scale = Vector2(0.48, 0.48)
 
 [node name="Pants" parent="DressupDoll/Sonia" instance=ExtResource("2_yygga")]
 position = Vector2(238, 319)
-scale = Vector2(0.48000246, 0.48000246)
+scale = Vector2(0.480002, 0.480002)
 clothing_category = 1
 
 [node name="Alastor" type="CanvasLayer" parent="DressupDoll"]

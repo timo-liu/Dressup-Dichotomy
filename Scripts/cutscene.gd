@@ -9,6 +9,12 @@ extends Control
 	"Astor" : $Astor,
 }
 
+@onready var chats = {
+	"Adrienne" : $CharacterTextBox/Adrienne,
+	"Sonia" : $CharacterTextBox/Sonia,
+	"Astor" : $CharacterTextBox/Astor,
+}
+
 var current_character_sprite : AnimatedSprite2D
 
 var typing_speed : float = 0.05
@@ -20,6 +26,9 @@ var current_counter : int = 0
 func _ready() -> void:
 	if GodScript.current_char != "PLAYER":
 		current_character_sprite = sprites[GodScript.current_char]
+		current_character_sprite.visible = true
+		chats[GodScript.current_char].visible = true
+		print(chats[GodScript.current_char].visible)
 	begin_play()
 
 func _process(delta: float) -> void:
