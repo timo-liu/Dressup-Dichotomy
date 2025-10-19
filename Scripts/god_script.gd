@@ -84,7 +84,7 @@ var dialogues = {
 
 }
 
-var current_char : String = "Sonia"
+var current_char : String = "Adrienne"
 
 func switch_to_dressup():
 	get_tree().change_scene_to_file("res://dressup/dressup.tscn")

@@ -42,25 +42,25 @@ func _update_visibility(category : String):
 		for s in clothes[GodScript.current_char][0].get_children():
 			if not s.on_body:
 				s.visible = true
-		$Clothing/Tops.z_index = 1
+		#$Clothing/Tops.z_index = 1
 		target = $Clothing/Tops
 	elif category == "bottoms":
 		for s in clothes[GodScript.current_char][1].get_children():
 			if not s.on_body:
 				s.visible = true
-		$Clothing/Bottoms.z_index = 1
+		#$Clothing/Bottoms.z_index = 1
 		target = $Clothing/Bottoms
 	elif category == "shoes":
 		for s in clothes[GodScript.current_char][2].get_children():
 			if not s.on_body:
 				s.visible = true
-		$Clothing/Shoes.z_index = 1
+		#$Clothing/Shoes.z_index = 1
 		target = $Clothing/Shoes
 	elif category == "accessories":
 		for s in clothes[GodScript.current_char][3].get_children():
 			if not s.on_body:
 				s.visible = true
-		$Clothing/Accessories.z_index = 1
+		#$Clothing/Accessories.z_index = 1
 		target = $Clothing/Accessories
 	$Clothing.move_child(target, $Clothing.get_child_count() - 1)
 
