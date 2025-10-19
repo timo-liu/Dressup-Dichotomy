@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wp2qbh8anpra"
-path="res://.godot/imported/topstab.png-4156a50f6d660340ff744d6f775036d8.ctex"
+uid="uid://bl7vjvwg7yxb5"
+path="res://.godot/imported/IMG_1338.PNG-8ffc2d0edabd9a1008a909398bf060c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/dressupui/topstab.png"
-dest_files=["res://.godot/imported/topstab.png-4156a50f6d660340ff744d6f775036d8.ctex"]
+source_file="res://Assets/UI/dressupui/IMG_1338.PNG"
+dest_files=["res://.godot/imported/IMG_1338.PNG-8ffc2d0edabd9a1008a909398bf060c5.ctex"]
 
 [params]
 

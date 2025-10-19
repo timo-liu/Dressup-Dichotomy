@@ -36,6 +36,8 @@ func check_for_locks():
 			print("locked")
 			return
 	on_body = false
+	if self in GodScript.on_body:
+		GodScript.on_body.erase(self)
 	position = base_position
 
 
