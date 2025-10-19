@@ -134,7 +134,6 @@ stretch_mode = 0
 [node name="Adrienne" type="Node" parent="Clothing/Bottoms"]
 
 [node name="skirt" parent="Clothing/Bottoms/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
 clothing_category = 1
 
 [node name="Texture" parent="Clothing/Bottoms/Adrienne/skirt" index="0"]
@@ -147,7 +146,6 @@ texture = ExtResource("9_ghqrv")
 expand_mode = 1
 
 [node name="skirt2" parent="Clothing/Bottoms/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
 position = Vector2(597, 466)
 clothing_category = 1
 
@@ -156,7 +154,6 @@ texture = ExtResource("10_5mfeb")
 expand_mode = 2
 
 [node name="skirt3" parent="Clothing/Bottoms/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
 position = Vector2(865, 465)
 clothing_category = 1
 correct = true
@@ -166,7 +163,7 @@ texture = ExtResource("11_luha8")
 expand_mode = 2
 
 [node name="skirt4" parent="Clothing/Bottoms/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
+position = Vector2(526, -78)
 clothing_category = 1
 
 [node name="Texture" parent="Clothing/Bottoms/Adrienne/skirt4" index="0"]
@@ -214,9 +211,8 @@ stretch_mode = 0
 [node name="Adrienne" type="Node" parent="Clothing/Shoes"]
 
 [node name="Shoes1" parent="Clothing/Shoes/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
 z_index = 1
-position = Vector2(631, 481)
+position = Vector2(638, 374.00003)
 scale = Vector2(1.296, 1.296)
 clothing_category = 2
 base_position = Vector2(631, 481)
@@ -227,7 +223,7 @@ texture = ExtResource("10_3beu4")
 expand_mode = 1
 
 [node name="Shoes2" parent="Clothing/Shoes/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
+position = Vector2(375, -261)
 clothing_category = 2
 
 [node name="Texture" parent="Clothing/Shoes/Adrienne/Shoes2" index="0"]
@@ -242,6 +238,7 @@ texture = ExtResource("17_6ogmo")
 position = Vector2(285, 587)
 
 [node name="Shoes3" parent="Clothing/Shoes/Adrienne" instance=ExtResource("6_rg7ru")]
+position = Vector2(608, -91)
 clothing_category = 2
 correct = true
 
@@ -257,7 +254,7 @@ texture = ExtResource("18_vkcmx")
 position = Vector2(287, 594)
 
 [node name="Shoes4" parent="Clothing/Shoes/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
+position = Vector2(331, -110)
 clothing_category = 2
 
 [node name="Texture" parent="Clothing/Shoes/Adrienne/Shoes4" index="0"]
@@ -306,7 +303,7 @@ texture = ExtResource("16_ghqrv")
 expand_mode = 1
 
 [node name="acc2" parent="Clothing/Accessories/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
+position = Vector2(542, 371)
 clothing_category = 3
 
 [node name="Texture" parent="Clothing/Accessories/Adrienne/acc2" index="0"]
@@ -317,8 +314,11 @@ offset_bottom = 2037.0
 scale = Vector2(0.126, 0.126)
 texture = ExtResource("23_l8bjp")
 
+[node name="Shape" parent="Clothing/Accessories/Adrienne/acc2" index="1"]
+position = Vector2(280, 60)
+
 [node name="acc3" parent="Clothing/Accessories/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
+position = Vector2(645, 117)
 clothing_category = 3
 correct = true
 
@@ -330,7 +330,11 @@ offset_bottom = 2013.0
 scale = Vector2(0.054, 0.054)
 texture = ExtResource("24_ptyu0")
 
+[node name="Shape" parent="Clothing/Accessories/Adrienne/acc3" index="1"]
+position = Vector2(285, 52)
+
 [node name="acc4" parent="Clothing/Accessories/Adrienne" instance=ExtResource("6_rg7ru")]
+position = Vector2(339, 115)
 clothing_category = 3
 
 [node name="Texture" parent="Clothing/Accessories/Adrienne/acc4" index="0"]
@@ -340,6 +344,9 @@ offset_right = 2252.0
 offset_bottom = 2018.0
 scale = Vector2(0.044, 0.044)
 texture = ExtResource("25_p7ea5")
+
+[node name="Shape" parent="Clothing/Accessories/Adrienne/acc4" index="1"]
+position = Vector2(292, 53)
 
 [node name="Sonia" type="Node" parent="Clothing/Accessories"]
 
@@ -368,7 +375,6 @@ stretch_mode = 0
 [node name="Adrienne" type="Node" parent="Clothing/Tops"]
 
 [node name="Shirt1" parent="Clothing/Tops/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
 z_index = 1
 position = Vector2(628, 180)
 scale = Vector2(1.55768, 1.55768)
@@ -384,7 +390,7 @@ texture = ExtResource("7_3beu4")
 expand_mode = 1
 
 [node name="Shirt2" parent="Clothing/Tops/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
+position = Vector2(601, -14)
 
 [node name="Texture" parent="Clothing/Tops/Adrienne/Shirt2" index="0"]
 offset_left = 200.0
@@ -398,8 +404,7 @@ texture = ExtResource("29_w3w25")
 position = Vector2(309, 230)
 
 [node name="Shirt3" parent="Clothing/Tops/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
-position = Vector2(-326, 22)
+position = Vector2(399, 225)
 correct = true
 
 [node name="Texture" parent="Clothing/Tops/Adrienne/Shirt3" index="0"]
@@ -414,7 +419,7 @@ texture = ExtResource("30_pu00r")
 position = Vector2(303, 214)
 
 [node name="Shirt4" parent="Clothing/Tops/Adrienne" instance=ExtResource("6_rg7ru")]
-visible = false
+position = Vector2(618, 209)
 
 [node name="Texture" parent="Clothing/Tops/Adrienne/Shirt4" index="0"]
 offset_left = 217.0

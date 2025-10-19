@@ -85,5 +85,5 @@ func _on_accessories_button_down() -> void:
 
 
 func _on_next_pressed() -> void:
-	if len(GodScript.on_body) == 4:
-		GodScript.grade()
+	print (GodScript.on_body)
+	GodScript.grade()
