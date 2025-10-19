@@ -6,7 +6,7 @@ extends Control
 @onready var sprites = {
 	"Adrienne" : $Adrienne,
 	"Sonia" : $sonia,
-	"Astor" : $Astor
+	"Astor" : $Astor,
 }
 
 var current_character_sprite : AnimatedSprite2D
@@ -18,7 +18,8 @@ var current_talker = "PLAYER"
 var current_counter : int = 0
 
 func _ready() -> void:
-	current_character_sprite = sprites[GodScript.current_char]
+	if GodScript.current_char != "PLAYER":
+		current_character_sprite = sprites[GodScript.current_char]
 	begin_play()
 
 func _process(delta: float) -> void:
@@ -67,4 +68,7 @@ func _input(event: InputEvent) -> void:
 			if current_counter < len(GodScript.dialogues[GodScript.current_char]):
 				begin_play()
 			else:
-				GodScript.switch_to_dressup()
+				if not GodScript.current_char == "PLAYER":
+					GodScript.switch_to_dressup()
+				else:
+					GodScript.switch_to_select()

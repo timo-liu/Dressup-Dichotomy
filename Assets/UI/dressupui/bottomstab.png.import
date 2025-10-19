@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddt8owh47cdg6"
-path="res://.godot/imported/test_mannequin.png-e8d263d5ee546f1c0781a0402569c737.ctex"
+uid="uid://b3ovakqwh28o6"
+path="res://.godot/imported/bottomstab.png-3c015ae4c40330b659a86606f27253f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Dolls/test_mannequin.png"
-dest_files=["res://.godot/imported/test_mannequin.png-e8d263d5ee546f1c0781a0402569c737.ctex"]
+source_file="res://Assets/UI/dressupui/bottomstab.png"
+dest_files=["res://.godot/imported/bottomstab.png-3c015ae4c40330b659a86606f27253f4.ctex"]
 
 [params]
 

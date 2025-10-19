@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddt8owh47cdg6"
-path="res://.godot/imported/test_mannequin.png-e8d263d5ee546f1c0781a0402569c737.ctex"
+uid="uid://cvq1aj84xi8dc"
+path="res://.godot/imported/adrishirt1.png-4ef7523e838dae71985a9e5aea246b16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Dolls/test_mannequin.png"
-dest_files=["res://.godot/imported/test_mannequin.png-e8d263d5ee546f1c0781a0402569c737.ctex"]
+source_file="res://Assets/Clothes/Adrienne/adrishirt1.png"
+dest_files=["res://.godot/imported/adrishirt1.png-4ef7523e838dae71985a9e5aea246b16.ctex"]
 
 [params]
 

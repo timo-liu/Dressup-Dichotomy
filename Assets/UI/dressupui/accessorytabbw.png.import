@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b2a06fjtdhi0e"
+path="res://.godot/imported/accessorytabbw.png-0c382bdaa130a3f0c76b82aacaad2b84.res"
+
+[deps]
+
+source_file="res://Assets/UI/dressupui/accessorytabbw.png"
+dest_files=["res://.godot/imported/accessorytabbw.png-0c382bdaa130a3f0c76b82aacaad2b84.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

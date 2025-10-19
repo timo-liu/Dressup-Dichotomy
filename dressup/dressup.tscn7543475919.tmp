@@ -19,12 +19,10 @@
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ywa1x"]
 load_path = "res://.godot/imported/test_mannequin.png-e8d263d5ee546f1c0781a0402569c737.ctex"
 
-[node name="Root" type="Control"]
-layout_mode = 3
-anchors_preset = 0
+[node name="Root" type="CanvasLayer"]
 script = ExtResource("1_q3xi5")
 
-[node name="DressupDoll" type="CanvasLayer" parent="."]
+[node name="DressupDoll" type="Node" parent="."]
 
 [node name="Adrienne" type="CanvasLayer" parent="DressupDoll"]
 layer = 0
@@ -52,7 +50,7 @@ position = Vector2(263.17, 198.925)
 scale = Vector2(0.36, 0.36)
 
 [node name="shoes" parent="DressupDoll/Adrienne" instance=ExtResource("2_yygga")]
-position = Vector2(288.08, 585)
+position = Vector2(278.435, 585)
 scale = Vector2(0.588772, 0.588772)
 clothing_category = 2
 
@@ -80,7 +78,7 @@ offset_bottom = 629.0
 texture = SubResource("CompressedTexture2D_ywa1x")
 expand_mode = 1
 
-[node name="Clothing" type="CanvasLayer" parent="."]
+[node name="Clothing" type="Node" parent="."]
 
 [node name="Bottoms" type="TextureButton" parent="Clothing"]
 anchors_preset = 8
@@ -100,11 +98,11 @@ texture_click_mask = ExtResource("10_uxq5f")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Adrienne" type="Node" parent="Clothing/Bottoms"]
+[node name="Adrienne" type="CanvasLayer" parent="Clothing/Bottoms"]
 
-[node name="Sonia" type="Node" parent="Clothing/Bottoms"]
+[node name="Sonia" type="CanvasLayer" parent="Clothing/Bottoms"]
 
-[node name="Alastor" type="Node" parent="Clothing/Bottoms"]
+[node name="Alastor" type="CanvasLayer" parent="Clothing/Bottoms"]
 
 [node name="Shoes" type="TextureButton" parent="Clothing"]
 anchors_preset = 8
@@ -124,7 +122,7 @@ texture_click_mask = ExtResource("12_7cjx7")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Adrienne" type="Node" parent="Clothing/Shoes"]
+[node name="Adrienne" type="CanvasLayer" parent="Clothing/Shoes"]
 
 [node name="Shoes1" parent="Clothing/Shoes/Adrienne" instance=ExtResource("6_rg7ru")]
 z_index = 1
@@ -138,9 +136,9 @@ scale = Vector2(0.961207, 0.961207)
 texture = ExtResource("10_3beu4")
 expand_mode = 1
 
-[node name="Sonia" type="Node" parent="Clothing/Shoes"]
+[node name="Sonia" type="CanvasLayer" parent="Clothing/Shoes"]
 
-[node name="Alastor" type="Node" parent="Clothing/Shoes"]
+[node name="Alastor" type="CanvasLayer" parent="Clothing/Shoes"]
 
 [node name="Accessories" type="TextureButton" parent="Clothing"]
 anchors_preset = 8
@@ -160,11 +158,11 @@ texture_click_mask = ExtResource("15_vnmvc")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Adrienne" type="Node" parent="Clothing/Accessories"]
+[node name="Adrienne" type="CanvasLayer" parent="Clothing/Accessories"]
 
-[node name="Sonia" type="Node" parent="Clothing/Accessories"]
+[node name="Sonia" type="CanvasLayer" parent="Clothing/Accessories"]
 
-[node name="Alastor" type="Node" parent="Clothing/Accessories"]
+[node name="Alastor" type="CanvasLayer" parent="Clothing/Accessories"]
 
 [node name="Tops" type="TextureButton" parent="Clothing"]
 z_index = 1
@@ -186,7 +184,8 @@ texture_click_mask = ExtResource("6_bxrxh")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Adrienne" type="Node" parent="Clothing/Tops"]
+[node name="Adrienne" type="CanvasLayer" parent="Clothing/Tops"]
+layer = 0
 
 [node name="Shirt1" parent="Clothing/Tops/Adrienne" instance=ExtResource("6_rg7ru")]
 z_index = 1
@@ -203,12 +202,11 @@ scale = Vector2(0.665976, 0.665976)
 texture = ExtResource("7_3beu4")
 expand_mode = 1
 
-[node name="Sonia" type="Node" parent="Clothing/Tops"]
+[node name="Sonia" type="CanvasLayer" parent="Clothing/Tops"]
 
-[node name="Alastor" type="Node" parent="Clothing/Tops"]
+[node name="Alastor" type="CanvasLayer" parent="Clothing/Tops"]
 
 [node name="Next" type="Button" parent="."]
-layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0

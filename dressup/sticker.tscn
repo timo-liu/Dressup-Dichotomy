@@ -6,16 +6,24 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_vv667"]
 radius = 66.0303
 
-[node name="Sticker" type="Area2D"]
+[node name="Area2D" type="Area2D"]
 script = ExtResource("1_5v0uc")
 
 [node name="Texture" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("2_vv667")
 
 [node name="Shape" type="CollisionShape2D" parent="."]
-position = Vector2(59, 65)
 shape = SubResource("CircleShape2D_vv667")
 
 [connection signal="mouse_entered" from="Texture" to="." method="_on_texture_mouse_entered"]

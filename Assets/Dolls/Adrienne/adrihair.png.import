@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddt8owh47cdg6"
-path="res://.godot/imported/test_mannequin.png-e8d263d5ee546f1c0781a0402569c737.ctex"
+uid="uid://bld7h167top8j"
+path="res://.godot/imported/adrihair.png-779b2cbd7b3acd3433f7c351faa5871f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Dolls/test_mannequin.png"
-dest_files=["res://.godot/imported/test_mannequin.png-e8d263d5ee546f1c0781a0402569c737.ctex"]
+source_file="res://Assets/Dolls/Adrienne/adrihair.png"
+dest_files=["res://.godot/imported/adrihair.png-779b2cbd7b3acd3433f7c351faa5871f.ctex"]
 
 [params]
 

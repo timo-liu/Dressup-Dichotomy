@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://7eantkypqtuj"
+path="res://.godot/imported/bottomtabbw.png-9677a9752735f7998dbfbc8efad42e8c.res"
+
+[deps]
+
+source_file="res://Assets/UI/dressupui/bottomtabbw.png"
+dest_files=["res://.godot/imported/bottomtabbw.png-9677a9752735f7998dbfbc8efad42e8c.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

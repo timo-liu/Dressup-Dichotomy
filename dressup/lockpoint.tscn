@@ -1,20 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3bddn7ght265"]
+[gd_scene load_steps=3 format=3 uid="uid://c3bddn7ght265"]
 
 [ext_resource type="Script" uid="uid://dqkwwodk0qqpa" path="res://lockpoint.gd" id="1_qxa02"]
-[ext_resource type="Texture2D" uid="uid://bm4trbblfug22" path="res://icon.svg" id="2_q7wuw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_aklh1"]
 radius = 62.0725
 
 [node name="Lockpoint" type="Area2D"]
 script = ExtResource("1_qxa02")
-
-[node name="DebugSprite" type="TextureRect" parent="."]
-offset_left = -62.0
-offset_top = -64.0
-offset_right = 66.0
-offset_bottom = 64.0
-texture = ExtResource("2_q7wuw")
 
 [node name="Shape" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)
