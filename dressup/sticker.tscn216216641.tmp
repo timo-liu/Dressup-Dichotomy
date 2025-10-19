@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://bm4trbblfug22" path="res://icon.svg" id="2_vv667"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vv667"]
-radius = 66.0303
 
 [node name="Sticker" type="Area2D"]
 script = ExtResource("1_5v0uc")
@@ -15,8 +14,4 @@ offset_bottom = 40.0
 texture = ExtResource("2_vv667")
 
 [node name="Shape" type="CollisionShape2D" parent="."]
-position = Vector2(59, 65)
 shape = SubResource("CircleShape2D_vv667")
-
-[connection signal="mouse_entered" from="Texture" to="." method="_on_texture_mouse_entered"]
-[connection signal="mouse_exited" from="Texture" to="." method="_on_texture_mouse_exited"]

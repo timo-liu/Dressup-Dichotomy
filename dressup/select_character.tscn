@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://bteqcfjsh164i"]
+[gd_scene load_steps=3 format=3 uid="uid://bteqcfjsh164i"]
+
+[ext_resource type="Script" uid="uid://drn7x5v43v8dq" path="res://Scripts/select_character.gd" id="1_w82lc"]
+[ext_resource type="Texture2D" uid="uid://x7brjhsa4hu3" path="res://Assets/UI/charactersprites/adrienne_portrait_closedmouth.png" id="2_w82lc"]
 
 [node name="SelectCharacter" type="Control"]
 layout_mode = 3
@@ -7,11 +10,30 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_w82lc")
 
 [node name="CharacterHolder" type="HBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = 319.0
+offset_top = 81.0
+offset_right = 2586.0
+offset_bottom = 2129.0
+scale = Vector2(0.258107, 0.258107)
+alignment = 1
+
+[node name="A" type="TextureRect" parent="CharacterHolder"]
+layout_mode = 2
+texture = ExtResource("2_w82lc")
+expand_mode = 3
+
+[node name="B" type="TextureRect" parent="CharacterHolder"]
+layout_mode = 2
+texture = ExtResource("2_w82lc")
+
+[node name="C" type="TextureRect" parent="CharacterHolder"]
+layout_mode = 2
+texture = ExtResource("2_w82lc")
+
+[connection signal="gui_input" from="CharacterHolder/A" to="." method="_on_a_gui_input"]
+[connection signal="gui_input" from="CharacterHolder/B" to="." method="_on_b_gui_input"]
+[connection signal="gui_input" from="CharacterHolder/C" to="." method="_on_c_gui_input"]

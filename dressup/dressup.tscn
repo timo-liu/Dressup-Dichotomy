@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://hnt227yruuve"]
+[gd_scene load_steps=4 format=3 uid="uid://hnt227yruuve"]
+
+[ext_resource type="Texture2D" uid="uid://dnjke0qifw084" path="res://Assets/Dolls/test_mannequin.png" id="1_30su0"]
+[ext_resource type="Script" uid="uid://dtja5gtt06hnx" path="res://dressup/dressup.gd" id="1_q3xi5"]
+[ext_resource type="PackedScene" uid="uid://c3bddn7ght265" path="res://dressup/lockpoint.tscn" id="2_yygga"]
 
 [node name="Root" type="Control"]
 layout_mode = 3
@@ -8,6 +12,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 8
+script = ExtResource("1_q3xi5")
 
 [node name="Holder" type="HBoxContainer" parent="."]
 layout_mode = 1
@@ -17,15 +22,28 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="DressupGirl" type="Panel" parent="Holder"]
+[node name="DressupDoll" type="Panel" parent="Holder"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="A" type="Node" parent="Holder/DressupGirl"]
+[node name="A" type="Node" parent="Holder/DressupDoll"]
 
-[node name="B" type="Node" parent="Holder/DressupGirl"]
+[node name="Test_body" type="TextureRect" parent="Holder/DressupDoll/A"]
+offset_left = 149.0
+offset_top = 26.0
+offset_right = 404.0
+offset_bottom = 629.0
+texture = ExtResource("1_30su0")
+expand_mode = 1
 
-[node name="C" type="Node" parent="Holder/DressupGirl"]
+[node name="Lockpoint" parent="Holder/DressupDoll/A" instance=ExtResource("2_yygga")]
+position = Vector2(285, 217)
+scale = Vector2(0.36, 0.36)
+clothing_category = "shirt"
+
+[node name="B" type="Node" parent="Holder/DressupDoll"]
+
+[node name="C" type="Node" parent="Holder/DressupDoll"]
 
 [node name="Clothing" type="Panel" parent="Holder"]
 layout_mode = 2
@@ -33,6 +51,59 @@ size_flags_horizontal = 3
 
 [node name="A" type="Node" parent="Holder/Clothing"]
 
+[node name="Tops" type="TextureRect" parent="Holder/Clothing/A"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Holder/Clothing/A/Tops"]
+offset_left = 802.0
+offset_top = 266.0
+offset_right = 842.0
+offset_bottom = 306.0
+
+[node name="Bottoms" type="TextureRect" parent="Holder/Clothing/A"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Holder/Clothing/A/Bottoms"]
+offset_left = 802.0
+offset_top = 266.0
+offset_right = 842.0
+offset_bottom = 306.0
+
+[node name="Shoes" type="TextureRect" parent="Holder/Clothing/A"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Holder/Clothing/A/Shoes"]
+offset_left = 802.0
+offset_top = 266.0
+offset_right = 842.0
+offset_bottom = 306.0
+
+[node name="Accessories" type="TextureRect" parent="Holder/Clothing/A"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Holder/Clothing/A/Accessories"]
+offset_left = 802.0
+offset_top = 266.0
+offset_right = 842.0
+offset_bottom = 306.0
+
 [node name="B" type="Node" parent="Holder/Clothing"]
 
 [node name="C" type="Node" parent="Holder/Clothing"]
+
+[node name="Next" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -72.5
+offset_top = -75.0
+offset_right = 72.5
+grow_horizontal = 2
+grow_vertical = 0
