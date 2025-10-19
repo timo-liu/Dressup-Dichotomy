@@ -90,8 +90,9 @@ var dialogues = {
 
 var endings = {
 	"SoniaPass" : [["CHARACTER" , "stylist does a good job. got to go on a 20 minute rant about my beloved yuya because the shirt they got me caught the attention of another megafan LOL!! normies r afraid to talk to me which is a total win. seeing my outfit in the mirror makes me rly happy too :3 thx!! 5/5"]],
-	"soniaFail" : [["CHARACTER" , "cute clothes i guess…but not really for me. was hoping that a style change would help me meet more fans of my interests but nope…it's still just normies. good for if u just want new cute clothes. 3/5"]]
-
+	"SoniaFail" : [["CHARACTER" , "cute clothes i guess…but not really for me. was hoping that a style change would help me meet more fans of my interests but nope…it's still just normies. good for if u just want new cute clothes. 3/5"]],
+	"AdriennePass" : [["CHARACTER" , "I'VE NEVER HAD SO MANY CONVERSATIONS IN MY LIFE!!! The outfit that was chosen for me is absolutely perfect! It totally suits me and is in line with my style while pushing me a bit out of my comfort zone. People have come up to me to tell me that they love my skirt or my headdress which gives me the opportunity to start a conversation. This stylist is truly a genius! 5/5"]],
+	"AdrienneFail" : [["CHARACTER" , "I have to admit that the outfit is really cute. It's not that I expected a change of style to completely change my life, but…there wasn't much of a change at all. People still seem afraid to approach and talk to me and on top of that, I'm a bit uncomfortable with the outfit. I think I'll just go back to my old clothes, but it's nice to have some new pieces in my closet. 3/5"]]
 }
 
 var current_char : String = "Adrienne"
@@ -110,6 +111,7 @@ func grade():
 	for c in on_body:
 		if not c.correct:
 			switch_to_ending(false)
+	switch_to_ending(true)
 			
 func switch_to_ending(success : bool):
 	if not success:
