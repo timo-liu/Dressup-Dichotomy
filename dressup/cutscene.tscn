@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://uht06o48p8ai"]
+[gd_scene load_steps=12 format=3 uid="uid://uht06o48p8ai"]
 
 [ext_resource type="Script" uid="uid://nibnf651w232" path="res://Scripts/cutscene.gd" id="1_6thf7"]
 [ext_resource type="Texture2D" uid="uid://x7brjhsa4hu3" path="res://Assets/UI/charactersprites/adrienne_portrait_closedmouth.png" id="2_nii0h"]
@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://lhjus3kj5r13" path="res://Assets/UI/charactersprites/soniaclosemouth.png" id="4_8unei"]
 [ext_resource type="Texture2D" uid="uid://vggga2qrls8p" path="res://Assets/UI/charactersprites/soniaopenmouth.PNG" id="5_gvbjd"]
 [ext_resource type="Texture2D" uid="uid://ml8sjm6uye47" path="res://Assets/UI/adriennebubble.png" id="6_gvbjd"]
+[ext_resource type="Texture2D" uid="uid://c4do0m6qtnj1t" path="res://Assets/UI/playerbubble.png" id="6_nntdv"]
+[ext_resource type="Texture2D" uid="uid://c6oamageu40qk" path="res://Assets/UI/soniabubble.png" id="8_px5ma"]
+[ext_resource type="Texture2D" uid="uid://dboew8v8dtxd4" path="res://Assets/UI/astorbubble.png" id="9_63b5p"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i2stj"]
 animations = [{
@@ -60,6 +63,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_6thf7")
 
+[node name="BG" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="Adrienne" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(303, 917)
@@ -75,14 +86,6 @@ animation = &"talk"
 
 [node name="Astor" type="AnimatedSprite2D" parent="."]
 
-[node name="BG" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
 [node name="PlayerTextBox" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 661.0
@@ -90,13 +93,60 @@ offset_top = 389.0
 offset_right = 1109.0
 offset_bottom = 588.0
 
+[node name="TextureRect" type="TextureRect" parent="PlayerTextBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -124.5
+offset_bottom = 124.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_nntdv")
+expand_mode = 5
+
 [node name="PlayerText" type="RichTextLabel" parent="PlayerTextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 7.0
+offset_right = -41.0
+offset_bottom = -33.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayerText2" type="RichTextLabel" parent="PlayerTextBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 7.0
+offset_right = -41.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayerText3" type="RichTextLabel" parent="PlayerTextBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 7.0
+offset_right = -41.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -108,7 +158,6 @@ offset_right = 1078.0
 offset_bottom = 318.0
 
 [node name="Adrienne" type="TextureRect" parent="CharacterTextBox"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -126,6 +175,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("8_px5ma")
+expand_mode = 5
 
 [node name="Astor" type="TextureRect" parent="CharacterTextBox"]
 visible = false
@@ -135,12 +186,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("9_63b5p")
+expand_mode = 5
 
 [node name="CharacterText" type="RichTextLabel" parent="CharacterTextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 86.0
+offset_right = -68.0
+offset_bottom = -57.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)

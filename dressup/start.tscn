@@ -30,8 +30,10 @@ texture = ExtResource("2_dp1i7")
 
 [node name="start_button" type="TextureButton" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 397.0
+offset_top = 300.0
+offset_right = 2607.0
+offset_bottom = 2300.0
 scale = Vector2(0.173342, 0.173342)
 texture_normal = ExtResource("2_dp1i7")
 
