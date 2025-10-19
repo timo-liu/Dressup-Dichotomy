@@ -52,7 +52,11 @@ func _process(delta: float) -> void:
 				current_character_sprite.stop()
 			
 func begin_play():
-	var d = GodScript.dialogues[GodScript.current_char][current_counter]
+	var d
+	if not GodScript.ending:
+		d = GodScript.dialogues[GodScript.current_char][current_counter]
+	else:
+		d = GodScript.endings[GodScript.current_char][current_counter]
 	if d[0] == "PLAYER":
 		player_text.text = d[1]
 		player_text.visible_characters = 0

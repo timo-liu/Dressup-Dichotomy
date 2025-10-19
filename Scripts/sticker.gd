@@ -31,6 +31,7 @@ func check_for_locks():
 		if b.is_in_group(GodScript.CLOTHING_GROUPS[clothing_category]):
 			position = b.position # - Vector2($Texture.size.x/2, $Texture.size.y/2)
 			on_body = true
+			GodScript.on_body.append(self)
 			print("locked")
 			return
 	on_body = false

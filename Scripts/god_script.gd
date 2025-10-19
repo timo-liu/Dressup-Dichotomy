@@ -9,6 +9,10 @@ const CLOTHING_GROUPS = {
 	ClothingCategory.ACCESSORIES: "accessories"
 }
 
+var on_body = []
+var ending = false
+var current_ending = ""
+
 var dialogues = { 
 	"Adrienne" : [["CHARACTER" , "Hiiii!!!!!"],
 ["PLAYER" , "Adrienne. Typically dressed in all black. Distressed by the way that people perceive her."],
@@ -84,6 +88,12 @@ var dialogues = {
 
 }
 
+var endings = {
+	"SoniaPass" : [["CHARACTER" , "stylist does a good job. got to go on a 20 minute rant about my beloved yuya because the shirt they got me caught the attention of another megafan LOL!! normies r afraid to talk to me which is a total win. seeing my outfit in the mirror makes me rly happy too :3 thx!! 5/5"]],
+	"soniaFail" : [["CHARACTER" , "cute clothes i guess…but not really for me. was hoping that a style change would help me meet more fans of my interests but nope…it's still just normies. good for if u just want new cute clothes. 3/5"]]
+
+}
+
 var current_char : String = "Adrienne"
 
 func switch_to_dressup():
@@ -95,3 +105,16 @@ func switch_to_cutscene(character : String):
 
 func switch_to_select():
 	get_tree().change_scene_to_file("res://dressup/select_character.tscn")
+	
+func grade():
+	for c in on_body:
+		if not c.correct:
+			switch_to_ending(false)
+			
+func switch_to_ending(success : bool):
+	if not success:
+		current_ending = current_char + "Fail"
+	else:
+		current_ending = current_char + "Pass"
+	get_tree().change_scene_to_file("res://dressup/dressup.tscn")
+		
