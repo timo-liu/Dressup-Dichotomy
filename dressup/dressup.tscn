@@ -1,16 +1,18 @@
-[gd_scene load_steps=17 format=3 uid="uid://hnt227yruuve"]
+[gd_scene load_steps=19 format=3 uid="uid://hnt227yruuve"]
 
 [ext_resource type="Script" uid="uid://dtja5gtt06hnx" path="res://dressup/dressup.gd" id="1_q3xi5"]
 [ext_resource type="Texture2D" uid="uid://idipobs7c5v4" path="res://Assets/Dolls/Adrienne/adridoll.png" id="2_qrpf1"]
 [ext_resource type="PackedScene" uid="uid://c3bddn7ght265" path="res://dressup/lockpoint.tscn" id="2_yygga"]
 [ext_resource type="Texture2D" uid="uid://bld7h167top8j" path="res://Assets/Dolls/Adrienne/adrihair.png" id="3_0rlx7"]
 [ext_resource type="Texture2D" uid="uid://wp2qbh8anpra" path="res://Assets/UI/dressupui/topstab.png" id="4_qrpf1"]
+[ext_resource type="Texture2D" uid="uid://ikgi3djjbxtt" path="res://Assets/Dolls/Sonia/IMG_1306.PNG" id="5_oq87d"]
 [ext_resource type="Texture2D" uid="uid://b3ovakqwh28o6" path="res://Assets/UI/dressupui/bottomstab.png" id="5_ywa1x"]
 [ext_resource type="Texture2D" uid="uid://dse4jljo4u4xp" path="res://Assets/UI/dressupui/shoestab.png" id="6_0rlx7"]
 [ext_resource type="BitMap" uid="uid://ceh3bjn6uoxa4" path="res://Assets/UI/dressupui/shirttabbw.png" id="6_bxrxh"]
 [ext_resource type="PackedScene" uid="uid://2kuf2tfvi0ju" path="res://dressup/sticker.tscn" id="6_rg7ru"]
 [ext_resource type="Texture2D" uid="uid://cvq1aj84xi8dc" path="res://Assets/Clothes/Adrienne/adrishirt1.png" id="7_3beu4"]
 [ext_resource type="Texture2D" uid="uid://cvfq3p7a4xa0n" path="res://Assets/UI/dressupui/accessorytab.png" id="7_rg7ru"]
+[ext_resource type="Texture2D" uid="uid://yixojdmitct0" path="res://Assets/Clothes/Sonia/IMG_1302.PNG" id="9_gaoxu"]
 [ext_resource type="Texture2D" uid="uid://dp2vbyu4q2lje" path="res://Assets/Clothes/Adrienne/adrishoes1.png" id="10_3beu4"]
 [ext_resource type="BitMap" uid="uid://7eantkypqtuj" path="res://Assets/UI/dressupui/bottomtabbw.png" id="10_uxq5f"]
 [ext_resource type="BitMap" uid="uid://dng1lep8dmssx" path="res://Assets/UI/dressupui/shoetabbw.png" id="12_7cjx7"]
@@ -28,6 +30,7 @@ script = ExtResource("1_q3xi5")
 
 [node name="Adrienne" type="CanvasLayer" parent="DressupDoll"]
 layer = 0
+visible = false
 
 [node name="Body" type="TextureRect" parent="DressupDoll/Adrienne"]
 offset_left = 149.0
@@ -59,14 +62,22 @@ clothing_category = 2
 [node name="Sonia" type="CanvasLayer" parent="DressupDoll"]
 layer = 0
 
-[node name="Test_body" type="TextureRect" parent="DressupDoll/Sonia"]
-visible = false
+[node name="Body" type="TextureRect" parent="DressupDoll/Sonia"]
 offset_left = 149.0
 offset_top = 26.0
 offset_right = 404.0
 offset_bottom = 629.0
-texture = SubResource("CompressedTexture2D_ywa1x")
+texture = ExtResource("5_oq87d")
 expand_mode = 1
+
+[node name="Shirt" parent="DressupDoll/Sonia" instance=ExtResource("2_yygga")]
+position = Vector2(237, 206)
+scale = Vector2(0.48000002, 0.48000002)
+
+[node name="Pants" parent="DressupDoll/Sonia" instance=ExtResource("2_yygga")]
+position = Vector2(238, 319)
+scale = Vector2(0.48000246, 0.48000246)
+clothing_category = 1
 
 [node name="Alastor" type="CanvasLayer" parent="DressupDoll"]
 layer = 0
@@ -103,6 +114,18 @@ stretch_mode = 0
 [node name="Adrienne" type="Node" parent="Clothing/Bottoms"]
 
 [node name="Sonia" type="Node" parent="Clothing/Bottoms"]
+
+[node name="Area2D" parent="Clothing/Bottoms/Sonia" instance=ExtResource("6_rg7ru")]
+position = Vector2(921, 248)
+clothing_category = 1
+
+[node name="Texture" parent="Clothing/Bottoms/Sonia/Area2D" index="0"]
+offset_left = -63.0
+offset_top = -65.0
+offset_right = 1985.0
+offset_bottom = 1983.0
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("9_gaoxu")
 
 [node name="Alastor" type="Node" parent="Clothing/Bottoms"]
 
@@ -225,5 +248,6 @@ grow_vertical = 0
 [connection signal="button_down" from="Clothing/Accessories" to="." method="_on_accessories_button_down"]
 [connection signal="button_down" from="Clothing/Tops" to="." method="_on_tops_button_down"]
 
+[editable path="Clothing/Bottoms/Sonia/Area2D"]
 [editable path="Clothing/Shoes/Adrienne/Shoes1"]
 [editable path="Clothing/Tops/Adrienne/Shirt1"]

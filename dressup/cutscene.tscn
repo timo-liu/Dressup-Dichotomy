@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://uht06o48p8ai"]
+[gd_scene load_steps=8 format=3 uid="uid://uht06o48p8ai"]
 
 [ext_resource type="Script" uid="uid://nibnf651w232" path="res://Scripts/cutscene.gd" id="1_6thf7"]
 [ext_resource type="Texture2D" uid="uid://x7brjhsa4hu3" path="res://Assets/UI/charactersprites/adrienne_portrait_closedmouth.png" id="2_nii0h"]
 [ext_resource type="Texture2D" uid="uid://dr7bpjejh4c1f" path="res://Assets/UI/charactersprites/adrienne_portrait_open mouth.png" id="3_vb7vi"]
+[ext_resource type="Texture2D" uid="uid://lhjus3kj5r13" path="res://Assets/UI/charactersprites/soniaclosemouth.png" id="4_8unei"]
+[ext_resource type="Texture2D" uid="uid://vggga2qrls8p" path="res://Assets/UI/charactersprites/soniaopenmouth.PNG" id="5_gvbjd"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i2stj"]
 animations = [{
@@ -26,6 +28,28 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_8a47h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_8unei")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_8unei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gvbjd")
+}],
+"loop": true,
+"name": &"talk",
+"speed": 5.0
+}]
+
 [node name="Cutscene" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -42,6 +66,9 @@ sprite_frames = SubResource("SpriteFrames_i2stj")
 animation = &"talk"
 
 [node name="Sonia" type="AnimatedSprite2D" parent="."]
+position = Vector2(312, 933)
+sprite_frames = SubResource("SpriteFrames_8a47h")
+animation = &"talk"
 
 [node name="Astor" type="AnimatedSprite2D" parent="."]
 

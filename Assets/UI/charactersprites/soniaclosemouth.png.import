@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0uofoe5682vo"
-path="res://.godot/imported/adriskirt1.png-62be78f79a3c7aa7cf7ab93710dd9bba.ctex"
+uid="uid://lhjus3kj5r13"
+path="res://.godot/imported/soniaclosemouth.png-70d45b7997bd0ab183462f08ee9e2493.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Clothes/Adrienne/adriskirt1.png"
-dest_files=["res://.godot/imported/adriskirt1.png-62be78f79a3c7aa7cf7ab93710dd9bba.ctex"]
+source_file="res://Assets/UI/charactersprites/soniaclosemouth.png"
+dest_files=["res://.godot/imported/soniaclosemouth.png-70d45b7997bd0ab183462f08ee9e2493.ctex"]
 
 [params]
 

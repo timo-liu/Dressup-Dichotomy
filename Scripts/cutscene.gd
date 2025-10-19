@@ -5,7 +5,7 @@ extends Control
 
 @onready var sprites = {
 	"Adrienne" : $Adrienne,
-	"Sonia" : $sonia,
+	"Sonia" : $Sonia,
 	"Astor" : $Astor,
 }
 
