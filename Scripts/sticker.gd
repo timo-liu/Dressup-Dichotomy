@@ -6,6 +6,7 @@ var hovering : bool = false
 var on_body : bool = false
 @export var clothing_category : GodScript.ClothingCategory
 @export var base_position : Vector2 = Vector2.ZERO
+@export var correct = false
 
 func _ready() -> void:
 	$Texture.pivot_offset = Vector2($Texture.size.x/2, $Texture.size.y/2)
