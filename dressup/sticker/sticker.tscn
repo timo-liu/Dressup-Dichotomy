@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://brdbwaoj6gogs"]
 
-[ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://dressup/sticker/sticker.gd" id="1_s3jg2"]
+[ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://scripts/sticker.gd" id="1_s3jg2"]
 
 [node name="Sticker" type="TextureRect"]
 top_level = true

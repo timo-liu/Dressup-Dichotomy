@@ -1,20 +1,20 @@
 [gd_scene load_steps=29 format=3 uid="uid://ddewsshw2qq0g"]
 
-[ext_resource type="Texture2D" uid="uid://wp2qbh8anpra" path="res://Assets/UI/dressupui/topstab.png" id="1_tab7j"]
-[ext_resource type="Texture2D" uid="uid://b3ovakqwh28o6" path="res://Assets/UI/dressupui/bottomstab.png" id="2_tmhhk"]
-[ext_resource type="Texture2D" uid="uid://dse4jljo4u4xp" path="res://Assets/UI/dressupui/shoestab.png" id="3_yippn"]
-[ext_resource type="Texture2D" uid="uid://cvfq3p7a4xa0n" path="res://Assets/UI/dressupui/accessorytab.png" id="4_bekfi"]
-[ext_resource type="Texture2D" uid="uid://dej7ryrk38u6" path="res://Assets/Dolls/Adrienne/Heterogenous Size/adrienne_model.png" id="5_70np5"]
-[ext_resource type="Script" uid="uid://donlfu7ejak7b" path="res://dressup/doll.gd" id="6_ptna8"]
-[ext_resource type="Script" uid="uid://cqdlmp41wpjet" path="res://dressup/notebook.gd" id="7_tf7qr"]
-[ext_resource type="PackedScene" uid="uid://bdfqkw7t36ism" path="res://dressup/dolls/adrienne/stickers/adrienne_shirt_1.tscn" id="7_vfd42"]
-[ext_resource type="Script" uid="uid://dn63k5pl14mny" path="res://dressup/sticker_tab.gd" id="8_8g23i"]
+[ext_resource type="Texture2D" uid="uid://wp2qbh8anpra" path="res://assets/ui/dress_up_ui/tops_tab/topstab.png" id="1_tab7j"]
+[ext_resource type="Texture2D" uid="uid://b3ovakqwh28o6" path="res://assets/ui/dress_up_ui/bottoms_tab/bottomstab.png" id="2_tmhhk"]
+[ext_resource type="Texture2D" uid="uid://dse4jljo4u4xp" path="res://assets/ui/dress_up_ui/shoes_tab/shoestab.png" id="3_yippn"]
+[ext_resource type="Texture2D" uid="uid://cvfq3p7a4xa0n" path="res://assets/ui/dress_up_ui/accessories_tab/accessories_tab.png" id="4_bekfi"]
+[ext_resource type="Texture2D" uid="uid://dej7ryrk38u6" path="res://assets/dolls/Adrienne/adrienne_model.png" id="5_70np5"]
+[ext_resource type="Script" uid="uid://donlfu7ejak7b" path="res://scripts/doll_body.gd" id="6_ptna8"]
+[ext_resource type="Script" uid="uid://cqdlmp41wpjet" path="res://scripts/notebook.gd" id="7_tf7qr"]
+[ext_resource type="PackedScene" uid="uid://fqewmihbr5kr" path="res://dressup/dolls/adrienne/stickers/adrienne_shirt_1.tscn" id="7_vfd42"]
+[ext_resource type="Script" uid="uid://dn63k5pl14mny" path="res://scripts/sticker_tab.gd" id="8_8g23i"]
 [ext_resource type="PackedScene" uid="uid://d1n64f7xn35pn" path="res://dressup/dolls/adrienne/stickers/adrienne_shirt_2.tscn" id="8_rwdc2"]
 [ext_resource type="PackedScene" uid="uid://du1lwxohbh5u0" path="res://dressup/dolls/adrienne/stickers/adrienne_accessory_1.tscn" id="8_vfd42"]
 [ext_resource type="PackedScene" uid="uid://wpmtqcof1pul" path="res://dressup/dolls/adrienne/stickers/adrienne_shirt_3.tscn" id="9_7okdk"]
 [ext_resource type="PackedScene" uid="uid://bvn7ru00hc6nl" path="res://dressup/dolls/adrienne/stickers/adrienne_accessory_2.tscn" id="9_pl11k"]
 [ext_resource type="PackedScene" uid="uid://cahpgjqfkrgfs" path="res://dressup/dolls/adrienne/stickers/adrienne_accessory_3.tscn" id="10_0twww"]
-[ext_resource type="Texture2D" uid="uid://c54j7ltt6ex2f" path="res://Assets/Dolls/Adrienne/Heterogenous Size/adrienne_hair.png" id="10_3lqa2"]
+[ext_resource type="Texture2D" uid="uid://c54j7ltt6ex2f" path="res://assets/dolls/Adrienne/adrienne_hair.png" id="10_3lqa2"]
 [ext_resource type="PackedScene" uid="uid://cs0enb5t44600" path="res://dressup/dolls/adrienne/stickers/adrienne_shirt_4.tscn" id="10_870fg"]
 [ext_resource type="PackedScene" uid="uid://drioly60i6kqq" path="res://dressup/dolls/adrienne/stickers/adrienne_accessory_4.tscn" id="11_7quid"]
 [ext_resource type="PackedScene" uid="uid://dmcdj6jus7aby" path="res://dressup/dolls/adrienne/stickers/adrienne_skirt_1.tscn" id="11_10dn6"]
@@ -269,7 +269,7 @@ offset_right = 147.33331
 offset_bottom = -427.3333
 texture = ExtResource("10_3lqa2")
 
-[node name="Body" type="TextureRect" parent="Doll/Base" node_paths=PackedStringArray("outfit")]
+[node name="DollBody" type="TextureRect" parent="Doll/Base" node_paths=PackedStringArray("outfit")]
 layout_mode = 0
 offset_left = -347.00003
 offset_top = -953.0

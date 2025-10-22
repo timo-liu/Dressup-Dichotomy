@@ -17,5 +17,5 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-GodScript="*res://Scripts/god_script.gd"
-AudioStreamPlayer2d="*res://dressup/audio_stream_player_2d.tscn"
+GodScript="*res://scripts/god_script.gd"
+AudioStreamPlayer2d="*res://audio_stream_player/audio_stream_player_2d.tscn"

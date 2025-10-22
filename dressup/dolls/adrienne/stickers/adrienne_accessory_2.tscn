@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bvn7ru00hc6nl"]
 
-[ext_resource type="Texture2D" uid="uid://d38rl3j01ym0y" path="res://Assets/Clothes/Adrienne/Heterogenous Size/adrienne_accessory_2.png" id="1_yhs0h"]
-[ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://dressup/sticker/sticker.gd" id="2_pujgt"]
+[ext_resource type="Texture2D" uid="uid://d38rl3j01ym0y" path="res://assets/clothes/Adrienne/adrienne_accessory_2.png" id="1_yhs0h"]
+[ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://scripts/sticker.gd" id="2_pujgt"]
 
 [node name="AdrienneAccessory2" type="TextureRect"]
 z_index = 5

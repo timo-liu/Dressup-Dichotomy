@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://7eantkypqtuj"
+path="res://.godot/imported/bottomtabbw.png-c23509e85d66d0340d8bc8824cca644d.res"
+
+[deps]
+
+source_file="res://assets/ui/dress_up_ui/bottoms_tab/bottomtabbw.png"
+dest_files=["res://.godot/imported/bottomtabbw.png-c23509e85d66d0340d8bc8824cca644d.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

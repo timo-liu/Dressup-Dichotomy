@@ -98,26 +98,34 @@ var endings = {
 
 var current_char : String = "Adrienne"
 
+# DANGER: Hard-coded to Adrienne. The other dolls are not implemeneted yet.
+# Waiting for sprites...
+# If the artists don't have the originals, I'll try to adjust them myself
 func switch_to_dressup():
-	get_tree().change_scene_to_file("res://dressup/dressup.tscn")
+	get_tree().change_scene_to_file("res://dressup/dolls/adrienne/dressup.tscn")
+
 
 func switch_to_cutscene(character : String):
 	current_char = character
 	get_tree().change_scene_to_file("res://dressup/cutscene.tscn")
 
+
 func switch_to_select():
 	get_tree().change_scene_to_file("res://dressup/select_character.tscn")
-	
+
+
+# DANGER: Depreciated. You can grade the outfit by getting the doll's outfit, 
+# getting its children, and checking for the "correct" property.
 func grade():
 	for c in on_body:
 		if not c.correct:
 			switch_to_ending(false)
 	switch_to_ending(true)
-			
+
+
 func switch_to_ending(success : bool):
 	if not success:
 		current_ending = current_char + "Fail"
 	else:
 		current_ending = current_char + "Pass"
 	get_tree().change_scene_to_file("res://dressup/dressup.tscn")
-		

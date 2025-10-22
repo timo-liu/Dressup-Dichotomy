@@ -2,6 +2,28 @@
 class_name Outfitter
 extends Node
 
+# SceneTree:
+# Outfitter (Scale this one if necessary)
+# > Outfit
+# > Base (DO NOT SCALE)
+# > > Body (DO NOT SCALE)
+# > > Hair (DO NOT SCALE)
+
+# Step 1: Make sure your SceneTree looks like above.
+# Step 2: Drag in your LockPoint texture. 
+# This will be the texture of the exported Sticker.
+# (It also provides the visual from which you use to place the Sticker onto
+# the base)
+# Step 3: Click the "Place LockPoint" button
+# Step 4: Define the "Node Name", the name of the Sticker node
+# Step 5: Define the "Correctness"
+# Step 6: Define the "Clothing Category". Under the hood, this also adjusts the 
+# z-index/layering (Feel free to click "Force Update Layering" if the layering
+# does not adjust properly)
+# Step 7: Adjust the Sticker's position such that it is positioned correctly 
+# on the doll
+
+
 @export var doll: Control
 @export var outfit: Control
 @export var sticker_scene: PackedScene
@@ -39,15 +61,7 @@ func create_texture_rect():
 func force_update_layering():
 	lock_point.z_index = clothing_category_to_z_index(clothing_category)
 
-# Step 1: Define the "Sticker Folder". This is where the Sticker will go 
-# once it is created
-# Step 2: Define the "Sticker File Name"
-# Step 3: Define the "Sticker Name", the name of the Sticker Node
-# Step 4: Define the "Correctness"
-# Step 5: Define the "Clothing Category". Under the hood, this also adjusts the 
-# z-index/layering
-# Step 6: Replace the Sticker's texture (The TextureRect child of Doll)
-# Step 7: Adjust the Sticker's position such that it is positioned correctly on the doll
+
 func create_sticker():
 	var scene: PackedScene = PackedScene.new()
 	var new_sticker: Sticker = Sticker.new()

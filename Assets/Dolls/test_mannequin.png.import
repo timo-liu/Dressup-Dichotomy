@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddt8owh47cdg6"
-path="res://.godot/imported/test_mannequin.png-e8d263d5ee546f1c0781a0402569c737.ctex"
+path="res://.godot/imported/test_mannequin.png-48010b4dead8545d7c3b774e916566d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Dolls/test_mannequin.png"
-dest_files=["res://.godot/imported/test_mannequin.png-e8d263d5ee546f1c0781a0402569c737.ctex"]
+source_file="res://assets/dolls/test_mannequin.png"
+dest_files=["res://.godot/imported/test_mannequin.png-48010b4dead8545d7c3b774e916566d4.ctex"]
 
 [params]
 

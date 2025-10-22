@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ceh3bjn6uoxa4"
+path="res://.godot/imported/topstabbw.png-111e93ae55ca4b67775f1b52bd9c0897.res"
+
+[deps]
+
+source_file="res://assets/ui/dress_up_ui/tops_tab/topstabbw.png"
+dest_files=["res://.godot/imported/topstabbw.png-111e93ae55ca4b67775f1b52bd9c0897.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

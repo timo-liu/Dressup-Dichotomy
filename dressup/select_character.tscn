@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bteqcfjsh164i"]
 
-[ext_resource type="Script" uid="uid://drn7x5v43v8dq" path="res://Scripts/select_character.gd" id="1_w82lc"]
-[ext_resource type="Texture2D" uid="uid://x7brjhsa4hu3" path="res://Assets/UI/charactersprites/adrienne_portrait_closedmouth.png" id="2_w82lc"]
-[ext_resource type="Texture2D" uid="uid://2ptsllp3gxb5" path="res://Assets/UI/charactersprites/IMG_1305.PNG" id="3_lx8gl"]
+[ext_resource type="Script" uid="uid://drn7x5v43v8dq" path="res://scripts/select_character.gd" id="1_w82lc"]
+[ext_resource type="Texture2D" uid="uid://x7brjhsa4hu3" path="res://assets/ui/character_sprites/adrienne_portrait_closed_mouth.png" id="2_w82lc"]
+[ext_resource type="Texture2D" uid="uid://2ptsllp3gxb5" path="res://assets/ui/character_sprites/IMG_1305.PNG" id="3_lx8gl"]
 
 [node name="SelectCharacter" type="Control"]
 layout_mode = 3

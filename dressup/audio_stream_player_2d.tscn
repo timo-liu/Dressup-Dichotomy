@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3joi2em0smjb"]
-
-[ext_resource type="AudioStream" uid="uid://cfk6ibaoycxtv" path="res://Assets/Dress_Up_Dichotomy_Track01_v03.mp3" id="1_715al"]
-[ext_resource type="Script" uid="uid://bobfijoc428h3" path="res://audio_stream_player_2d.gd" id="2_b6e1y"]
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
-stream = ExtResource("1_715al")
-volume_db = -80.0
-script = ExtResource("2_b6e1y")

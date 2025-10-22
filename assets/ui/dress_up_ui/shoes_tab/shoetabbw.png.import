@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dng1lep8dmssx"
+path="res://.godot/imported/shoetabbw.png-4560d84651bbc8ae78459fe31b9bd124.res"
+
+[deps]
+
+source_file="res://assets/ui/dress_up_ui/shoes_tab/shoetabbw.png"
+dest_files=["res://.godot/imported/shoetabbw.png-4560d84651bbc8ae78459fe31b9bd124.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

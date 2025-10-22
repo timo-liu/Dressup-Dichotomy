@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1r0iggbuh5ry"
-path="res://.godot/imported/IMG_1313.PNG-697dd15542de82fa5dce4ebe3b476b3a.ctex"
+path="res://.godot/imported/IMG_1313.PNG-e7ade4e1e6adb398a998cd3e5badb9d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Clothes/Sonia/IMG_1313.PNG"
-dest_files=["res://.godot/imported/IMG_1313.PNG-697dd15542de82fa5dce4ebe3b476b3a.ctex"]
+source_file="res://assets/clothes/Sonia/IMG_1313.PNG"
+dest_files=["res://.godot/imported/IMG_1313.PNG-e7ade4e1e6adb398a998cd3e5badb9d0.ctex"]
 
 [params]
 
