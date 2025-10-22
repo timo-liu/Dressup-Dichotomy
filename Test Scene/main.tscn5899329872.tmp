@@ -1,0 +1,88 @@
+[gd_scene load_steps=9 format=3 uid="uid://ddewsshw2qq0g"]
+
+[ext_resource type="Script" uid="uid://cb1cyc1suc6id" path="res://Test Scene/main.gd" id="1_ikguk"]
+[ext_resource type="Texture2D" uid="uid://idipobs7c5v4" path="res://Assets/Dolls/Adrienne/adridoll.png" id="1_ngl6o"]
+[ext_resource type="Texture2D" uid="uid://cvq1aj84xi8dc" path="res://Assets/Clothes/Adrienne/adrishirt1.png" id="2_2uk50"]
+[ext_resource type="PackedScene" uid="uid://dyshd101dofrv" path="res://Test Scene/lock_point/lock_point.tscn" id="2_ikguk"]
+[ext_resource type="Script" uid="uid://donlfu7ejak7b" path="res://Test Scene/doll.gd" id="2_ngl6o"]
+[ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://Test Scene/sticker.gd" id="3_ngl6o"]
+[ext_resource type="Texture2D" uid="uid://d0uofoe5682vo" path="res://Assets/Clothes/Adrienne/adriskirt1.png" id="5_bq4ia"]
+[ext_resource type="Script" uid="uid://dn63k5pl14mny" path="res://Test Scene/sticker_tab.gd" id="8_4i4fu"]
+
+[node name="Main" type="Control" node_paths=PackedStringArray("doll")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ikguk")
+lock_point_scene = ExtResource("2_ikguk")
+doll = NodePath("Adridoll")
+
+[node name="Adridoll" type="Sprite2D" parent="." node_paths=PackedStringArray("outfit")]
+position = Vector2(185, 351)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_ngl6o")
+script = ExtResource("2_ngl6o")
+outfit = NodePath("Outfit")
+
+[node name="Outfit" type="Control" parent="Adridoll"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TabContainer" type="TabBar" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Tops" type="Panel" parent="TabContainer"]
+custom_minimum_size = Vector2(2390, 2000)
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1238.0
+offset_top = -660.5
+offset_bottom = 691.5
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+pivot_offset = Vector2(2335.1838, 960.98956)
+script = ExtResource("8_4i4fu")
+
+[node name="Adrishirt1" type="TextureRect" parent="TabContainer/Tops"]
+top_level = true
+layout_mode = 0
+offset_left = 577.0
+offset_top = 212.0
+offset_right = 2577.0
+offset_bottom = 2212.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_2uk50")
+script = ExtResource("3_ngl6o")
+
+[node name="TextureButton" type="Panel" parent="TabContainer"]
+layout_mode = 0
+offset_left = -1199.0
+offset_top = -635.0
+offset_right = 1191.0
+offset_bottom = 1365.0
+scale = Vector2(0.3, 0.3)
+pivot_offset = Vector2(2335.184, 960.99)
+script = ExtResource("8_4i4fu")
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/TextureButton"]
+top_level = true
+layout_mode = 0
+offset_left = 807.9999
+offset_top = 293.0
+offset_right = 2808.0
+offset_bottom = 2293.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_bq4ia")
+
+[connection signal="grabbed_sticker" from="TabContainer/Tops/Adrishirt1" to="." method="_on_grabbed_sticker"]

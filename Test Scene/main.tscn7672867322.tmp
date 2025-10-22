@@ -1,0 +1,83 @@
+[gd_scene load_steps=11 format=3 uid="uid://ddewsshw2qq0g"]
+
+[ext_resource type="Script" uid="uid://cb1cyc1suc6id" path="res://Test Scene/main.gd" id="1_ikguk"]
+[ext_resource type="Texture2D" uid="uid://idipobs7c5v4" path="res://Assets/Dolls/Adrienne/adridoll.png" id="1_ngl6o"]
+[ext_resource type="Texture2D" uid="uid://cvq1aj84xi8dc" path="res://Assets/Clothes/Adrienne/adrishirt1.png" id="2_2uk50"]
+[ext_resource type="PackedScene" uid="uid://dyshd101dofrv" path="res://Test Scene/lock_point/lock_point.tscn" id="2_ikguk"]
+[ext_resource type="Script" uid="uid://donlfu7ejak7b" path="res://Test Scene/doll.gd" id="2_ngl6o"]
+[ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://Test Scene/sticker.gd" id="3_ngl6o"]
+[ext_resource type="Texture2D" uid="uid://d0uofoe5682vo" path="res://Assets/Clothes/Adrienne/adriskirt1.png" id="5_bq4ia"]
+[ext_resource type="Resource" uid="uid://w7w4lwf3o3e2" path="res://Test Scene/adri_stickers/bottoms/adriskirt1.tres" id="7_ikguk"]
+[ext_resource type="Script" uid="uid://dn63k5pl14mny" path="res://Test Scene/sticker_tab.gd" id="8_4i4fu"]
+[ext_resource type="Resource" uid="uid://bq27h0nc5ov0c" path="res://Test Scene/adri_stickers/tops/adrishirt1.tres" id="8_bq4ia"]
+
+[node name="Main" type="Control" node_paths=PackedStringArray("doll")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ikguk")
+lock_point_scene = ExtResource("2_ikguk")
+doll = NodePath("Adridoll")
+
+[node name="Adridoll" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 44.999996
+offset_top = 40.999996
+offset_right = 3087.0
+offset_bottom = 6041.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_ngl6o")
+script = ExtResource("2_ngl6o")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 429.0
+offset_top = 56.0
+offset_right = -14.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 1
+
+[node name="TopTab" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+script = ExtResource("8_4i4fu")
+metadata/_tab_index = 0
+
+[node name="Adrishirt1" type="TextureRect" parent="TabContainer/TopTab"]
+top_level = true
+layout_mode = 0
+offset_left = 534.00006
+offset_top = 205.0
+offset_right = 2534.0
+offset_bottom = 2205.0
+scale = Vector2(0.101, 0.101)
+texture = ExtResource("2_2uk50")
+script = ExtResource("3_ngl6o")
+sticker_data = ExtResource("8_bq4ia")
+
+[node name="BottomTab" type="Panel" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="AdriSkirt1" type="TextureRect" parent="TabContainer/BottomTab"]
+top_level = true
+layout_mode = 0
+offset_left = 489.0
+offset_top = 316.0
+offset_right = 2489.0
+offset_bottom = 2316.0
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("5_bq4ia")
+script = ExtResource("3_ngl6o")
+sticker_data = ExtResource("7_ikguk")
+
+[connection signal="grabbed_sticker" from="TabContainer/TopTab/Adrishirt1" to="." method="_on_grabbed_sticker"]
+[connection signal="grabbed_sticker" from="TabContainer/BottomTab/AdriSkirt1" to="." method="_on_grabbed_sticker"]

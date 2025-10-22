@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://wpmtqcof1pul"]
+
+[ext_resource type="Texture2D" uid="uid://bbvvyf2l1m3s0" path="res://Assets/Clothes/Adrienne/Heterogenous Size/adrienne_shirt_3.png" id="1_q6lrk"]
+[ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://dressup/sticker/sticker.gd" id="2_m0f8x"]
+
+[node name="AdrienneShirt3" type="TextureRect"]
+z_index = 3
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_q6lrk")
+script = ExtResource("2_m0f8x")
+lock_point = Vector2(-103, -182)
+correct = true

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyshd101dofrv"]
+
+[ext_resource type="Texture2D" uid="uid://bm4trbblfug22" path="res://icon.svg" id="1_ivj2k"]
+[ext_resource type="Script" uid="uid://ctwqn35ty80de" path="res://dressup/lock_point/lock_point.gd" id="2_sft10"]
+
+[node name="LockPoint" type="TextureRect"]
+top_level = true
+offset_right = 276.0
+offset_bottom = 377.0
+texture = ExtResource("1_ivj2k")
+script = ExtResource("2_sft10")

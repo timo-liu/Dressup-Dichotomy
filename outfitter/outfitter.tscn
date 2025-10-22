@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgrgox57w4nj8"]
+
+[ext_resource type="Script" uid="uid://b2n2s5jtaonxk" path="res://outfitter/outfitter.gd" id="1_p0oug"]
+[ext_resource type="PackedScene" uid="uid://brdbwaoj6gogs" path="res://dressup/sticker/sticker.tscn" id="2_d44lc"]
+[ext_resource type="Texture2D" uid="uid://dwupb6xglrblf" path="res://Assets/Clothes/Adrienne/Heterogenous Size/adrienne_shirt_1.png" id="3_d44lc"]
+[ext_resource type="Texture2D" uid="uid://dej7ryrk38u6" path="res://Assets/Dolls/Adrienne/Heterogenous Size/adrienne_model.png" id="4_xhpi8"]
+[ext_resource type="Texture2D" uid="uid://c54j7ltt6ex2f" path="res://Assets/Dolls/Adrienne/Heterogenous Size/adrienne_hair.png" id="5_7fg8a"]
+
+[node name="Outfitter" type="Node" node_paths=PackedStringArray("doll", "outfit", "lock_point")]
+script = ExtResource("1_p0oug")
+doll = NodePath("Doll")
+outfit = NodePath("Doll/Outfit")
+sticker_scene = ExtResource("2_d44lc")
+lock_point_texture = ExtResource("3_d44lc")
+lock_point = NodePath("Doll/Outfit/LockPoint")
+sticker_folder = "res://dressup/dolls/adrienne/stickers/"
+sticker_file_name = "adrienne_shirt_1"
+sticker_node_name = "AdrienneShirt1"
+correct = true
+
+[node name="Doll" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 191.0
+offset_top = 340.0
+offset_right = 191.0
+offset_bottom = 340.0
+scale = Vector2(0.3, 0.3)
+
+[node name="Outfit" type="Control" parent="Doll"]
+anchors_preset = 0
+
+[node name="LockPoint" type="TextureRect" parent="Doll/Outfit"]
+z_index = 3
+layout_mode = 0
+offset_left = -330.0
+offset_top = -633.3333
+offset_right = 377.0
+offset_bottom = 1.666687
+texture = ExtResource("3_d44lc")
+
+[node name="Base" type="Control" parent="Doll"]
+anchors_preset = 0
+metadata/_edit_lock_ = true
+
+[node name="AdrienneHair" type="TextureRect" parent="Doll/Base"]
+visible = false
+z_index = 4
+layout_mode = 0
+offset_left = -206.66669
+offset_top = -973.3333
+offset_right = 147.33331
+offset_bottom = -427.3333
+texture = ExtResource("5_7fg8a")
+metadata/_edit_lock_ = true
+
+[node name="Body" type="TextureRect" parent="Doll/Base"]
+layout_mode = 0
+offset_left = -347.00003
+offset_top = -953.0
+offset_right = 346.99997
+offset_bottom = 953.0
+texture = ExtResource("4_xhpi8")
+metadata/_edit_lock_ = true

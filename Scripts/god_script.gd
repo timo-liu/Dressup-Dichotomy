@@ -1,6 +1,7 @@
 extends Node
 
 enum ClothingCategory {SHIRT, PANTS, SHOES, ACCESSORIES}
+enum DollName {ADRIENNE, SONIA, ASTOR}
 
 const CLOTHING_GROUPS = {
 	ClothingCategory.SHIRT: "shirt",
