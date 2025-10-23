@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://132cgl0pwtur"]
 
-[ext_resource type="Texture2D" uid="uid://bjrb56bhdrs50" path="res://assets/clothes/Adrienne/adrienne_shoes_3.png" id="1_rbomp"]
+[ext_resource type="Texture2D" uid="uid://bjrb56bhdrs50" path="res://assets/clothes/adrienne/adrienne_shoes_3.png" id="1_rbomp"]
 [ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://scripts/sticker.gd" id="2_pxdre"]
 
 [node name="AdrienneShoes3" type="TextureRect"]

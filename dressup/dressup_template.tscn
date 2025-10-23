@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://b3ovakqwh28o6" path="res://assets/ui/dress_up_ui/bottoms_tab/bottomstab.png" id="2_w0n2f"]
 [ext_resource type="Texture2D" uid="uid://dse4jljo4u4xp" path="res://assets/ui/dress_up_ui/shoes_tab/shoestab.png" id="3_msea7"]
 [ext_resource type="Texture2D" uid="uid://cvfq3p7a4xa0n" path="res://assets/ui/dress_up_ui/accessories_tab/accessories_tab.png" id="4_hsbd8"]
-[ext_resource type="Texture2D" uid="uid://dej7ryrk38u6" path="res://assets/dolls/Adrienne/adrienne_model.png" id="5_44517"]
+[ext_resource type="Texture2D" uid="uid://dej7ryrk38u6" path="res://assets/dolls/adrienne/adrienne_model.png" id="5_44517"]
 [ext_resource type="Script" uid="uid://donlfu7ejak7b" path="res://scripts/doll_body.gd" id="6_p8wcr"]
 [ext_resource type="Script" uid="uid://cqdlmp41wpjet" path="res://scripts/notebook.gd" id="7_m38ih"]
 [ext_resource type="Script" uid="uid://dn63k5pl14mny" path="res://scripts/sticker_tab.gd" id="8_toy3r"]
-[ext_resource type="Texture2D" uid="uid://c54j7ltt6ex2f" path="res://assets/dolls/Adrienne/adrienne_hair.png" id="9_ggb81"]
+[ext_resource type="Texture2D" uid="uid://c54j7ltt6ex2f" path="res://assets/dolls/adrienne/adrienne_hair.png" id="9_ggb81"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i286f"]
 

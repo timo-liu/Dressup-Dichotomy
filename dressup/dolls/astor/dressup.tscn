@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dse4jljo4u4xp" path="res://assets/ui/dress_up_ui/shoes_tab/shoestab.png" id="3_3beu4"]
 [ext_resource type="Texture2D" uid="uid://cvfq3p7a4xa0n" path="res://assets/ui/dress_up_ui/accessories_tab/accessories_tab.png" id="4_3cani"]
 [ext_resource type="Script" uid="uid://cqdlmp41wpjet" path="res://scripts/notebook.gd" id="7_7cjx7"]
-[ext_resource type="Texture2D" uid="uid://ikgi3djjbxtt" path="res://assets/dolls/Sonia/IMG_1306.PNG" id="7_ao4xa"]
+[ext_resource type="Texture2D" uid="uid://ikgi3djjbxtt" path="res://assets/dolls/sonia/sonia_doll.PNG" id="7_ao4xa"]
 [ext_resource type="Script" uid="uid://donlfu7ejak7b" path="res://scripts/doll_body.gd" id="8_b5k4c"]
 [ext_resource type="Script" uid="uid://dn63k5pl14mny" path="res://scripts/sticker_tab.gd" id="8_vnmvc"]
 

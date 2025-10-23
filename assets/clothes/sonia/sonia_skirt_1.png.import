@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl86dnvq8w75l"
-path="res://.godot/imported/IMG_1312.PNG-058cfb749fd782930fade779069649be.ctex"
+uid="uid://cyvytfgmv503b"
+path="res://.godot/imported/sonia_skirt_1.png-9f9530bd9a8951e59fb25facedbb706b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/clothes/Sonia/IMG_1312.PNG"
-dest_files=["res://.godot/imported/IMG_1312.PNG-058cfb749fd782930fade779069649be.ctex"]
+source_file="res://assets/clothes/sonia/sonia_skirt_1.png"
+dest_files=["res://.godot/imported/sonia_skirt_1.png-9f9530bd9a8951e59fb25facedbb706b.ctex"]
 
 [params]
 

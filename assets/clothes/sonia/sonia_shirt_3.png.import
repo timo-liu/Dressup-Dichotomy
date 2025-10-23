@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dej7ryrk38u6"
-path="res://.godot/imported/adrienne_model.png-9490b9d6df048fbce1accf3158cb4234.ctex"
+uid="uid://djs7b458urbop"
+path="res://.godot/imported/sonia_shirt_3.png-b4f709e892b605e4e493c3a79a739944.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/dolls/adrienne/adrienne_model.png"
-dest_files=["res://.godot/imported/adrienne_model.png-9490b9d6df048fbce1accf3158cb4234.ctex"]
+source_file="res://assets/clothes/sonia/sonia_shirt_3.png"
+dest_files=["res://.godot/imported/sonia_shirt_3.png-b4f709e892b605e4e493c3a79a739944.ctex"]
 
 [params]
 

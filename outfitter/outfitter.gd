@@ -2,12 +2,20 @@
 class_name Outfitter
 extends Node
 
-# SceneTree:
-# Outfitter (Scale this one if necessary)
-# > Outfit
+# Assumption: 
+# SceneTree in outfitter.tscn:
+# Doll (Scale this one if necessary, note its value)
+# > Outfit (DO NOT SCALE)
 # > Base (DO NOT SCALE)
 # > > Body (DO NOT SCALE)
 # > > Hair (DO NOT SCALE)
+# SceneTree in dressup.tscn:
+# Doll (DO NOT SCALE)
+# > Outfit (DO NOT SCALE)
+# > Base (Set the same scale to what you scaled Doll in outfitter.tscn)
+# > > Body (DO NOT SCALE)
+# > > Hair (DO NOT SCALE)
+
 
 # Step 1: Make sure your SceneTree looks like above.
 # Step 2: Drag in your LockPoint texture. 
@@ -69,6 +77,9 @@ func create_sticker():
 	new_sticker.name = sticker_node_name
 	new_sticker.lock_point = lock_point.position * doll.scale
 	new_sticker.scale = doll.scale
+	#new_sticker.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	#new_sticker.size = lock_point.size
+	
 	new_sticker.texture = lock_point.texture
 	new_sticker.correct = correct
 	new_sticker.clothing_category = clothing_category

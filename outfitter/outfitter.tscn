@@ -2,31 +2,41 @@
 
 [ext_resource type="Script" uid="uid://b2n2s5jtaonxk" path="res://outfitter/outfitter.gd" id="1_p0oug"]
 [ext_resource type="PackedScene" uid="uid://brdbwaoj6gogs" path="res://dressup/sticker/sticker.tscn" id="2_d44lc"]
-[ext_resource type="Texture2D" uid="uid://dwupb6xglrblf" path="res://assets/clothes/Adrienne/adrienne_shirt_1.png" id="3_d44lc"]
-[ext_resource type="Texture2D" uid="uid://ikgi3djjbxtt" path="res://assets/dolls/Sonia/IMG_1306.PNG" id="4_yi8d6"]
+[ext_resource type="Texture2D" uid="uid://cij56akod45ja" path="res://assets/clothes/sonia/sonia_shirt_0.png" id="3_yi8d6"]
+[ext_resource type="Texture2D" uid="uid://ikgi3djjbxtt" path="res://assets/dolls/sonia/sonia_doll.PNG" id="4_yi8d6"]
 
-[node name="Outfitter" type="Node" node_paths=PackedStringArray("doll", "outfit")]
+[node name="Outfitter" type="Node" node_paths=PackedStringArray("doll", "outfit", "lock_point")]
 script = ExtResource("1_p0oug")
 doll = NodePath("Doll")
 outfit = NodePath("Doll/Outfit")
 sticker_scene = ExtResource("2_d44lc")
-lock_point_texture = ExtResource("3_d44lc")
-sticker_folder = "res://dressup/dolls/adrienne/stickers/"
-sticker_file_name = "adrienne_shirt_1"
-sticker_node_name = "AdrienneShirt1"
+lock_point_texture = ExtResource("3_yi8d6")
+lock_point = NodePath("Doll/Outfit/LockPoint2")
+sticker_folder = "res://dressup/dolls/sonia/stickers/"
+sticker_file_name = "sonia_shirt_1"
+sticker_node_name = "SoniaShirt1"
 correct = true
 
 [node name="Doll" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 191.0
-offset_top = 340.0
-offset_right = 191.0
-offset_bottom = 340.0
 scale = Vector2(0.3, 0.3)
 
 [node name="Outfit" type="Control" parent="Doll"]
 anchors_preset = 0
+
+[node name="LockPoint" type="TextureRect" parent="Doll/Outfit"]
+z_index = 3
+layout_mode = 0
+offset_left = 226.66666
+offset_top = 426.66666
+offset_right = 558.6666
+offset_bottom = 810.6666
+texture = ExtResource("3_yi8d6")
+
+[node name="LockPoint2" type="TextureRect" parent="Doll/Outfit"]
+layout_mode = 0
+texture = ExtResource("3_yi8d6")
 
 [node name="Base" type="Control" parent="Doll"]
 anchors_preset = 0
@@ -34,9 +44,7 @@ metadata/_edit_lock_ = true
 
 [node name="Body" type="TextureRect" parent="Doll/Base"]
 layout_mode = 0
-offset_left = -347.00003
-offset_top = -953.0
-offset_right = 346.99997
-offset_bottom = 953.0
+offset_right = 792.0
+offset_bottom = 2048.0
 texture = ExtResource("4_yi8d6")
 metadata/_edit_lock_ = true
