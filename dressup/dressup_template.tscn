@@ -71,15 +71,32 @@ texture = ExtResource("4_hsbd8")
 expand_mode = 1
 metadata/_tab_index = 0
 
-[node name="Doll" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 108.0
-offset_top = 70.899994
-offset_right = 802.0
-offset_bottom = 1976.9
+[node name="Doll" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 87.0
+offset_top = 64.0
+offset_right = 87.0
+offset_bottom = 64.0
+metadata/_edit_group_ = true
+
+[node name="Outfit" type="Control" parent="Doll"]
+anchors_preset = 0
+
+[node name="Base" type="Control" parent="Doll"]
+anchors_preset = 0
 scale = Vector2(0.3, 0.3)
+
+[node name="Doll" type="TextureRect" parent="Doll/Base" node_paths=PackedStringArray("outfit")]
+layout_mode = 0
+offset_right = 694.0
+offset_bottom = 1906.0
 texture = ExtResource("5_44517")
 script = ExtResource("6_p8wcr")
+outfit = NodePath("../../Outfit")
+
+[node name="Hair" type="Sprite2D" parent="Doll/Base"]
+position = Vector2(310, 249.99998)
+texture = ExtResource("9_ggb81")
 
 [node name="Notebook" type="TabContainer" parent="." node_paths=PackedStringArray("tops_tab", "bottoms_tab", "shoes_tab", "accessories_tab")]
 layout_mode = 0
@@ -164,11 +181,6 @@ offset_left = 1028.0
 offset_top = 101.0
 offset_right = 1113.0
 offset_bottom = 197.0
-
-[node name="AdrienneHair" type="Sprite2D" parent="."]
-position = Vector2(204, 145.9)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("9_ggb81")
 
 [connection signal="pressed" from="AccessoriesButton" to="Notebook" method="_on_accessories_button_pressed"]
 [connection signal="pressed" from="ShoesButton" to="Notebook" method="_on_shoes_button_pressed"]

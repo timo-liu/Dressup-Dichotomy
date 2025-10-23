@@ -1,13 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://fwikl7e32kao"]
+[gd_scene load_steps=13 format=3 uid="uid://fwikl7e32kao"]
 
 [ext_resource type="Texture2D" uid="uid://wp2qbh8anpra" path="res://assets/ui/dress_up_ui/tops_tab/topstab.png" id="1_0rlx7"]
 [ext_resource type="Texture2D" uid="uid://b3ovakqwh28o6" path="res://assets/ui/dress_up_ui/bottoms_tab/bottomstab.png" id="2_rg7ru"]
 [ext_resource type="Texture2D" uid="uid://dse4jljo4u4xp" path="res://assets/ui/dress_up_ui/shoes_tab/shoestab.png" id="3_3beu4"]
 [ext_resource type="Texture2D" uid="uid://cvfq3p7a4xa0n" path="res://assets/ui/dress_up_ui/accessories_tab/accessories_tab.png" id="4_3cani"]
-[ext_resource type="Script" uid="uid://cqdlmp41wpjet" path="res://scripts/notebook.gd" id="7_7cjx7"]
-[ext_resource type="Texture2D" uid="uid://ikgi3djjbxtt" path="res://assets/dolls/sonia/sonia_doll.PNG" id="7_ao4xa"]
-[ext_resource type="Script" uid="uid://donlfu7ejak7b" path="res://scripts/doll_body.gd" id="8_b5k4c"]
-[ext_resource type="Script" uid="uid://dn63k5pl14mny" path="res://scripts/sticker_tab.gd" id="8_vnmvc"]
+[ext_resource type="Texture2D" uid="uid://dej7ryrk38u6" path="res://assets/dolls/adrienne/adrienne_model.png" id="5_bxrxh"]
+[ext_resource type="Script" uid="uid://donlfu7ejak7b" path="res://scripts/doll_body.gd" id="6_uxq5f"]
+[ext_resource type="Texture2D" uid="uid://c54j7ltt6ex2f" path="res://assets/dolls/adrienne/adrienne_hair.png" id="7_7cjx7"]
+[ext_resource type="Script" uid="uid://cqdlmp41wpjet" path="res://scripts/notebook.gd" id="8_vnmvc"]
+[ext_resource type="Script" uid="uid://dn63k5pl14mny" path="res://scripts/sticker_tab.gd" id="9_oq87d"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i286f"]
 
@@ -70,6 +71,33 @@ texture = ExtResource("4_3cani")
 expand_mode = 1
 metadata/_tab_index = 0
 
+[node name="Doll" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 87.0
+offset_top = 64.0
+offset_right = 87.0
+offset_bottom = 64.0
+metadata/_edit_group_ = true
+
+[node name="Outfit" type="Control" parent="Doll"]
+anchors_preset = 0
+
+[node name="Base" type="Control" parent="Doll"]
+anchors_preset = 0
+scale = Vector2(0.3, 0.3)
+
+[node name="Doll" type="TextureRect" parent="Doll/Base" node_paths=PackedStringArray("outfit")]
+layout_mode = 0
+offset_right = 694.0
+offset_bottom = 1906.0
+texture = ExtResource("5_bxrxh")
+script = ExtResource("6_uxq5f")
+outfit = NodePath("../../Outfit")
+
+[node name="Hair" type="Sprite2D" parent="Doll/Base"]
+position = Vector2(310, 249.99998)
+texture = ExtResource("7_7cjx7")
+
 [node name="Notebook" type="TabContainer" parent="." node_paths=PackedStringArray("tops_tab", "bottoms_tab", "shoes_tab", "accessories_tab")]
 layout_mode = 0
 offset_left = 388.0
@@ -79,7 +107,7 @@ offset_bottom = 648.0
 theme = SubResource("Theme_4i4fu")
 current_tab = 3
 tabs_visible = false
-script = ExtResource("7_7cjx7")
+script = ExtResource("8_vnmvc")
 tops_tab = NodePath("TopsTab")
 bottoms_tab = NodePath("BottomsTab")
 shoes_tab = NodePath("AccessoriesTab")
@@ -92,7 +120,7 @@ visible = false
 layout_mode = 2
 texture = ExtResource("1_0rlx7")
 expand_mode = 1
-script = ExtResource("8_vnmvc")
+script = ExtResource("9_oq87d")
 metadata/_tab_index = 0
 metadata/_edit_lock_ = true
 
@@ -101,7 +129,7 @@ visible = false
 layout_mode = 2
 texture = ExtResource("2_rg7ru")
 expand_mode = 1
-script = ExtResource("8_vnmvc")
+script = ExtResource("9_oq87d")
 metadata/_tab_index = 1
 metadata/_edit_lock_ = true
 
@@ -110,7 +138,7 @@ visible = false
 layout_mode = 2
 texture = ExtResource("3_3beu4")
 expand_mode = 1
-script = ExtResource("8_vnmvc")
+script = ExtResource("9_oq87d")
 metadata/_tab_index = 2
 metadata/_edit_lock_ = true
 
@@ -118,7 +146,7 @@ metadata/_edit_lock_ = true
 layout_mode = 2
 texture = SubResource("CompressedTexture2D_ikguk")
 expand_mode = 1
-script = ExtResource("8_vnmvc")
+script = ExtResource("9_oq87d")
 metadata/_tab_index = 3
 metadata/_edit_lock_ = true
 
@@ -153,34 +181,6 @@ offset_left = 1028.0
 offset_top = 101.0
 offset_right = 1113.0
 offset_bottom = 197.0
-
-[node name="Doll" type="Control" parent="."]
-anchors_preset = 0
-offset_left = 187.0
-offset_top = 336.0
-offset_right = 187.0
-offset_bottom = 336.0
-scale = Vector2(0.3, 0.3)
-
-[node name="Base" type="Control" parent="Doll"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="DollBody" type="TextureRect" parent="Doll/Base"]
-layout_mode = 0
-offset_left = -347.00003
-offset_top = -953.0001
-offset_right = 444.99997
-offset_bottom = 1094.9999
-texture = ExtResource("7_ao4xa")
-script = ExtResource("8_b5k4c")
-metadata/_edit_lock_ = true
-
-[node name="Outfit" type="Control" parent="Doll"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
 
 [connection signal="pressed" from="AccessoriesButton" to="Notebook" method="_on_accessories_button_pressed"]
 [connection signal="pressed" from="ShoesButton" to="Notebook" method="_on_shoes_button_pressed"]
