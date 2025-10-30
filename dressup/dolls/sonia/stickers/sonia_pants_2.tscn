@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4kyq6auhba5t"]
+
+[ext_resource type="Texture2D" uid="uid://buyxmysxwkotb" path="res://Assets/Clothes/sonia/sonia_pants_2.png" id="1_w75ps"]
+[ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://Scripts/sticker.gd" id="2_a4mrk"]
+
+[node name="SoniaPants2" type="TextureRect"]
+z_index = 2
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_w75ps")
+script = ExtResource("2_a4mrk")
+lock_point = Vector2(44.000004, 251.99998)
+clothing_category = 1

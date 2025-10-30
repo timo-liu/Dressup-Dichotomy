@@ -10,6 +10,10 @@ const CLOTHING_GROUPS = {
 	ClothingCategory.ACCESSORIES: "accessories"
 }
 
+const DRESSUP_SCENES = {
+	
+}
+
 var on_body = []
 var ending = false
 var current_ending = ""
