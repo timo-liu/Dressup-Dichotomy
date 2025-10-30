@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yv7h2tqswu32"
-path="res://.godot/imported/adrienne_accessory_1.png-fcf0b64ea9b3e4ecc0c987463882983c.ctex"
+path="res://.godot/imported/adrienne_accessory_1.png-e323404d384e59f683746f05484cab76.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/clothes/adrienne/adrienne_accessory_1.png"
-dest_files=["res://.godot/imported/adrienne_accessory_1.png-fcf0b64ea9b3e4ecc0c987463882983c.ctex"]
+source_file="res://Assets/Clothes/Adrienne/adrienne_accessory_1.png"
+dest_files=["res://.godot/imported/adrienne_accessory_1.png-e323404d384e59f683746f05484cab76.ctex"]
 
 [params]
 

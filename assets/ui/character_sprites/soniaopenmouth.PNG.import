@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vggga2qrls8p"
-path="res://.godot/imported/soniaopenmouth.PNG-afba86ea5e185405a6c6666cbeb0e754.ctex"
+path="res://.godot/imported/soniaopenmouth.PNG-251973fae926bd66709fbe16ba94a511.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/character_sprites/soniaopenmouth.PNG"
-dest_files=["res://.godot/imported/soniaopenmouth.PNG-afba86ea5e185405a6c6666cbeb0e754.ctex"]
+source_file="res://Assets/UI/character_sprites/soniaopenmouth.PNG"
+dest_files=["res://.godot/imported/soniaopenmouth.PNG-251973fae926bd66709fbe16ba94a511.ctex"]
 
 [params]
 

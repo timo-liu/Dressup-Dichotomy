@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dse4jljo4u4xp"
-path="res://.godot/imported/shoestab.png-32fcb68d08203d74b7ead45d431e4656.ctex"
+path="res://.godot/imported/shoestab.png-196a2f6d771293e7876d9c42ff609f02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/dress_up_ui/shoes_tab/shoestab.png"
-dest_files=["res://.godot/imported/shoestab.png-32fcb68d08203d74b7ead45d431e4656.ctex"]
+source_file="res://Assets/UI/dress_up_ui/shoes_tab/shoestab.png"
+dest_files=["res://.godot/imported/shoestab.png-196a2f6d771293e7876d9c42ff609f02.ctex"]
 
 [params]
 

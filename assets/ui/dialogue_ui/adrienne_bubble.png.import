@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ml8sjm6uye47"
-path="res://.godot/imported/adrienne_bubble.png-af16603f8e581ae7b84dadedb1b42c59.ctex"
+path="res://.godot/imported/adrienne_bubble.png-1e64e058d6a9479c5333096785bcdaa9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/dialogue_ui/adrienne_bubble.png"
-dest_files=["res://.godot/imported/adrienne_bubble.png-af16603f8e581ae7b84dadedb1b42c59.ctex"]
+source_file="res://Assets/UI/dialogue_ui/adrienne_bubble.png"
+dest_files=["res://.godot/imported/adrienne_bubble.png-1e64e058d6a9479c5333096785bcdaa9.ctex"]
 
 [params]
 

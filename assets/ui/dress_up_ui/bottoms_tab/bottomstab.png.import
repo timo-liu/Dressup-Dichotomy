@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3ovakqwh28o6"
-path="res://.godot/imported/bottomstab.png-e9b0e745848c3ea579a2e33642be91a4.ctex"
+path="res://.godot/imported/bottomstab.png-e8f7dc9426f8554e47dbd1a9c27ed185.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/dress_up_ui/bottoms_tab/bottomstab.png"
-dest_files=["res://.godot/imported/bottomstab.png-e9b0e745848c3ea579a2e33642be91a4.ctex"]
+source_file="res://Assets/UI/dress_up_ui/bottoms_tab/bottomstab.png"
+dest_files=["res://.godot/imported/bottomstab.png-e8f7dc9426f8554e47dbd1a9c27ed185.ctex"]
 
 [params]
 

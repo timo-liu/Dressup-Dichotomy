@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c54j7ltt6ex2f"
-path="res://.godot/imported/adrienne_hair.png-7dcc89e5f9abf33cfe8eb8e4ff638ce7.ctex"
+path="res://.godot/imported/adrienne_hair.png-054833bc9d731f8c6a954207f71f011c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/dolls/adrienne/adrienne_hair.png"
-dest_files=["res://.godot/imported/adrienne_hair.png-7dcc89e5f9abf33cfe8eb8e4ff638ce7.ctex"]
+source_file="res://Assets/Dolls/Adrienne/adrienne_hair.png"
+dest_files=["res://.godot/imported/adrienne_hair.png-054833bc9d731f8c6a954207f71f011c.ctex"]
 
 [params]
 

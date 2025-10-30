@@ -31,13 +31,10 @@ extends Node
 # Step 7: Adjust the Sticker's position such that it is positioned correctly 
 # on the doll
 
-
 @export var doll: Control
 @export var outfit: Control
 @export var sticker_scene: PackedScene
 
-@export_category("LockPoint Properties")
-@export var lock_point_texture: Texture
 @export_tool_button("Place LockPoint") var create_texture_rect_action = create_texture_rect
 @export var lock_point: TextureRect
 @export_tool_button("Force Update Layering") var force_update_layering_action = force_update_layering
@@ -56,6 +53,21 @@ extends Node
 		return clothing_category
 @export_tool_button("Create Sticker") var create_sticker_action = create_sticker
 
+@export_category("LockPoint Properties")
+@export var lock_point_texture: Texture :
+	get :
+		return lock_point_texture
+	set(value):
+		var base = value.load_path.get_file().split(".png")[0]
+		base = base.replace(".imported/", "").replace(".godot/imported/", "")
+		sticker_file_name = base
+		var parts = base.split("_")
+		var pascal_name = ""
+		for part in parts:
+				if part.length() > 0:
+					pascal_name += part.substr(0, 1).to_upper() + part.substr(1).to_lower()
+					sticker_node_name = pascal_name
+		lock_point_texture = value
 
 func create_texture_rect():
 	var texture_rect: TextureRect = TextureRect.new()
@@ -90,6 +102,7 @@ func create_sticker():
 	var data: Error = ResourceSaver.save(scene, file_path)
 	print(error_string(data))
 	new_sticker.queue_free()
+	lock_point.queue_free()
 
 
 # Layer Order:

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brsfhr1an61s3"
-path="res://.godot/imported/adrienne_shoes_2.png-cca240b68935d5ef99f7cc22504107df.ctex"
+path="res://.godot/imported/adrienne_shoes_2.png-ba92778cfe15f06f87d449ce67e0a951.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/clothes/adrienne/adrienne_shoes_2.png"
-dest_files=["res://.godot/imported/adrienne_shoes_2.png-cca240b68935d5ef99f7cc22504107df.ctex"]
+source_file="res://Assets/Clothes/Adrienne/adrienne_shoes_2.png"
+dest_files=["res://.godot/imported/adrienne_shoes_2.png-ba92778cfe15f06f87d449ce67e0a951.ctex"]
 
 [params]
 

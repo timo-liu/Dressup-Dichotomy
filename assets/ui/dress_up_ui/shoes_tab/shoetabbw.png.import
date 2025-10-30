@@ -3,12 +3,12 @@
 importer="bitmap"
 type="BitMap"
 uid="uid://dng1lep8dmssx"
-path="res://.godot/imported/shoetabbw.png-4560d84651bbc8ae78459fe31b9bd124.res"
+path="res://.godot/imported/shoetabbw.png-15cd9416bb699396fa92e0fbe9e2ea5d.res"
 
 [deps]
 
-source_file="res://assets/ui/dress_up_ui/shoes_tab/shoetabbw.png"
-dest_files=["res://.godot/imported/shoetabbw.png-4560d84651bbc8ae78459fe31b9bd124.res"]
+source_file="res://Assets/UI/dress_up_ui/shoes_tab/shoetabbw.png"
+dest_files=["res://.godot/imported/shoetabbw.png-15cd9416bb699396fa92e0fbe9e2ea5d.res"]
 
 [params]
 

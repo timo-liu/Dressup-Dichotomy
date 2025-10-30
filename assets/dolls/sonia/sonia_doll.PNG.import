@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ikgi3djjbxtt"
-path="res://.godot/imported/sonia_doll.PNG-055cde1d3d895aa2b143b5411d5cd856.ctex"
+path="res://.godot/imported/sonia_doll.PNG-f1f95023d0df673e388cfc1f42529e8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/dolls/sonia/sonia_doll.PNG"
-dest_files=["res://.godot/imported/sonia_doll.PNG-055cde1d3d895aa2b143b5411d5cd856.ctex"]
+source_file="res://Assets/Dolls/sonia/sonia_doll.PNG"
+dest_files=["res://.godot/imported/sonia_doll.PNG-f1f95023d0df673e388cfc1f42529e8a.ctex"]
 
 [params]
 

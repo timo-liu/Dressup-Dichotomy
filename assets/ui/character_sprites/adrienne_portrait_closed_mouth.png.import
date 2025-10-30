@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://x7brjhsa4hu3"
-path="res://.godot/imported/adrienne_portrait_closed_mouth.png-cd58fd76afabf14e2bc94d1b17914be8.ctex"
+path="res://.godot/imported/adrienne_portrait_closed_mouth.png-5b3036084d7233e2b27a17c31eaaec6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/character_sprites/adrienne_portrait_closed_mouth.png"
-dest_files=["res://.godot/imported/adrienne_portrait_closed_mouth.png-cd58fd76afabf14e2bc94d1b17914be8.ctex"]
+source_file="res://Assets/UI/character_sprites/adrienne_portrait_closed_mouth.png"
+dest_files=["res://.godot/imported/adrienne_portrait_closed_mouth.png-5b3036084d7233e2b27a17c31eaaec6d.ctex"]
 
 [params]
 

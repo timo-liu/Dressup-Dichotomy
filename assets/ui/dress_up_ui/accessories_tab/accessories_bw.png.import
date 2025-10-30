@@ -3,12 +3,12 @@
 importer="bitmap"
 type="BitMap"
 uid="uid://b2a06fjtdhi0e"
-path="res://.godot/imported/accessories_bw.png-bffce90981ad47b16bedd80195f8d77d.res"
+path="res://.godot/imported/accessories_bw.png-36f73898359fefc9a0636eab190d9797.res"
 
 [deps]
 
-source_file="res://assets/ui/dress_up_ui/accessories_tab/accessories_bw.png"
-dest_files=["res://.godot/imported/accessories_bw.png-bffce90981ad47b16bedd80195f8d77d.res"]
+source_file="res://Assets/UI/dress_up_ui/accessories_tab/accessories_bw.png"
+dest_files=["res://.godot/imported/accessories_bw.png-36f73898359fefc9a0636eab190d9797.res"]
 
 [params]
 

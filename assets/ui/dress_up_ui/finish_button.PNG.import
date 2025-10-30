@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl7vjvwg7yxb5"
-path="res://.godot/imported/finish_button.PNG-25bcda661ca1c06c9f1b4534f811decc.ctex"
+path="res://.godot/imported/finish_button.PNG-bdcdee467fb010496f4ad848d53d6656.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/dress_up_ui/finish_button.PNG"
-dest_files=["res://.godot/imported/finish_button.PNG-25bcda661ca1c06c9f1b4534f811decc.ctex"]
+source_file="res://Assets/UI/dress_up_ui/finish_button.PNG"
+dest_files=["res://.godot/imported/finish_button.PNG-bdcdee467fb010496f4ad848d53d6656.ctex"]
 
 [params]
 

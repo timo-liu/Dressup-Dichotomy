@@ -1,21 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgrgox57w4nj8"]
+[gd_scene load_steps=6 format=3 uid="uid://bgrgox57w4nj8"]
 
 [ext_resource type="Script" uid="uid://b2n2s5jtaonxk" path="res://outfitter/outfitter.gd" id="1_p0oug"]
 [ext_resource type="PackedScene" uid="uid://brdbwaoj6gogs" path="res://dressup/sticker/sticker.tscn" id="2_d44lc"]
-[ext_resource type="Texture2D" uid="uid://cij56akod45ja" path="res://assets/clothes/sonia/sonia_shirt_0.png" id="3_yi8d6"]
-[ext_resource type="Texture2D" uid="uid://ikgi3djjbxtt" path="res://assets/dolls/sonia/sonia_doll.PNG" id="4_yi8d6"]
+[ext_resource type="Texture2D" uid="uid://buyxmysxwkotb" path="res://Assets/Clothes/sonia/sonia_pants_2.png" id="3_d44lc"]
+[ext_resource type="Texture2D" uid="uid://c5b7e63pd113" path="res://Assets/Clothes/sonia/sonia_accessory_3.png" id="3_yi8d6"]
+[ext_resource type="Texture2D" uid="uid://ikgi3djjbxtt" path="res://Assets/Dolls/sonia/sonia_doll.PNG" id="4_yi8d6"]
 
 [node name="Outfitter" type="Node" node_paths=PackedStringArray("doll", "outfit", "lock_point")]
 script = ExtResource("1_p0oug")
 doll = NodePath("Doll")
 outfit = NodePath("Doll/Outfit")
 sticker_scene = ExtResource("2_d44lc")
-lock_point_texture = ExtResource("3_yi8d6")
 lock_point = NodePath("Doll/Outfit/LockPoint")
 sticker_folder = "res://dressup/dolls/sonia/stickers/"
-sticker_file_name = "sonia_shirt_0"
-sticker_node_name = "SoniaShirt0"
+sticker_file_name = "sonia_accessory_3"
+sticker_node_name = "SoniaAccessory3"
 correct = true
+clothing_category = 3
+lock_point_texture = ExtResource("3_d44lc")
 
 [node name="Doll" type="Control" parent="."]
 layout_mode = 3
@@ -26,12 +28,12 @@ scale = Vector2(0.3, 0.3)
 anchors_preset = 0
 
 [node name="LockPoint" type="TextureRect" parent="Doll/Outfit"]
-z_index = 3
+z_index = 5
 layout_mode = 0
-offset_left = 200.0
-offset_top = 440.0
-offset_right = 532.0
-offset_bottom = 824.0
+offset_left = 270.0
+offset_top = 233.33333
+offset_right = 487.0
+offset_bottom = 327.3333
 texture = ExtResource("3_yi8d6")
 
 [node name="Base" type="Control" parent="Doll"]
