@@ -56,7 +56,7 @@ func begin_play():
 	if not GodScript.ending:
 		d = GodScript.dialogues[GodScript.current_char][current_counter]
 	else:
-		d = GodScript.endings[GodScript.current_char][current_counter]
+		d = GodScript.endings[GodScript.current_ending][current_counter]
 	if d[0] == "PLAYER":
 		player_text.text = d[1]
 		player_text.visible_characters = 0

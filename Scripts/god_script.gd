@@ -108,7 +108,6 @@ var current_char : String = "Adrienne"
 func switch_to_dressup():
 	get_tree().change_scene_to_file(DRESSUP_SCENES[current_char])
 
-
 func switch_to_cutscene(character : String):
 	current_char = character
 	get_tree().change_scene_to_file("res://dressup/cutscene.tscn")
@@ -122,4 +121,5 @@ func switch_to_ending(success : bool):
 		current_ending = current_char + "Fail"
 	else:
 		current_ending = current_char + "Pass"
-	get_tree().change_scene_to_file("res://dressup/dressup.tscn")
+	ending = true
+	get_tree().change_scene_to_file("res://dressup/cutscene.tscn")

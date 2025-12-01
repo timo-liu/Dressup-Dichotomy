@@ -2,6 +2,7 @@ class_name DollBody
 extends TextureRect
 
 @export var outfit: Control
+@onready var submitButton : TextureButton = $"../../../SubmitButton"
 
 # DANGER: DO NOT SCALE THE BODY!!! If you must change the size, scale the
 # parent the Base node.
@@ -14,6 +15,12 @@ extends TextureRect
 # at_position is some value between those points. 
 # Since "lock_point" is where the Sticker should snap to, build the hitbox
 # around that.
+
+func _process(delta: float) -> void:
+	if check_outfit():
+			submitButton.visible = true
+	else:
+		submitButton.visible = false
 
 func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
 	return check_able_puton(data as Sticker)
@@ -30,13 +37,22 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 	if check_able_puton(sticker):
 		sticker.reparent(outfit)
 		sticker.position = sticker.lock_point
+		if check_outfit():
+			submitButton.visible = true
+		else:
+			submitButton.visible = false
 	
 func check_outfit() -> bool:
-	var check_table = {}
+	var checkTable = {}
 	for i in GodScript.CLOTHING_GROUPS.values():
-		check_table[i] = false
-
-	# for child in get_children():
+		checkTable[i] = false
+	for child in outfit.get_children():
+		if child is not Sticker:
+			continue
+		checkTable[GodScript.CLOTHING_GROUPS[child.clothing_category]] = true
+	for cat in checkTable:
+		if not checkTable[cat]:
+			return false
 	return true
 		
 func check_able_puton(curr_clothing : Sticker) -> bool:
@@ -44,4 +60,12 @@ func check_able_puton(curr_clothing : Sticker) -> bool:
 		if child.clothing_category == curr_clothing.clothing_category:
 			return false
 	return true
-		
+
+
+func _on_submit_button_pressed() -> void:
+	for child in outfit.get_children():
+		if child is not Sticker:
+			continue
+		if not child.correct:
+			GodScript.switch_to_ending(false)
+	GodScript.switch_to_ending(true)
