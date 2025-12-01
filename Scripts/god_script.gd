@@ -11,10 +11,10 @@ const CLOTHING_GROUPS = {
 }
 
 const DRESSUP_SCENES = {
-	
+	"Adrienne" : "res://dressup/dolls/adrienne/dressup.tscn",
+	"Sonia" : "res://dressup/dolls/sonia/dressup.tscn",
+	"Astor" : "res://dressup/dolls/astor/dressup.tscn"
 }
-
-var on_body = []
 var ending = false
 var current_ending = ""
 
@@ -106,7 +106,7 @@ var current_char : String = "Adrienne"
 # Waiting for sprites...
 # If the artists don't have the originals, I'll try to adjust them myself
 func switch_to_dressup():
-	get_tree().change_scene_to_file("res://dressup/dolls/adrienne/dressup.tscn")
+	get_tree().change_scene_to_file(DRESSUP_SCENES[current_char])
 
 
 func switch_to_cutscene(character : String):
@@ -116,16 +116,6 @@ func switch_to_cutscene(character : String):
 
 func switch_to_select():
 	get_tree().change_scene_to_file("res://dressup/select_character.tscn")
-
-
-# DANGER: Depreciated. You can grade the outfit by getting the doll's outfit, 
-# getting its children, and checking for the "correct" property.
-func grade():
-	for c in on_body:
-		if not c.correct:
-			switch_to_ending(false)
-	switch_to_ending(true)
-
 
 func switch_to_ending(success : bool):
 	if not success:

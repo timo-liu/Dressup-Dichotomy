@@ -16,9 +16,7 @@ extends TextureRect
 # around that.
 
 func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
-	if not data is Sticker:
-		return false
-	return true
+	return check_able_puton(data as Sticker)
 	#var sticker: Sticker = data as Sticker
 	#var top_left: Vector2 = sticker.lock_point - sticker.get_sticker_offset()
 	#var bottom_right: Vector2 = sticker.lock_point + sticker.get_sticker_offset()
@@ -29,5 +27,21 @@ func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
 
 func _drop_data(_at_position: Vector2, data: Variant) -> void:
 	var sticker: Sticker = data as Sticker
-	sticker.reparent(outfit)
-	sticker.position = sticker.lock_point
+	if check_able_puton(sticker):
+		sticker.reparent(outfit)
+		sticker.position = sticker.lock_point
+	
+func check_outfit() -> bool:
+	var check_table = {}
+	for i in GodScript.CLOTHING_GROUPS.values():
+		check_table[i] = false
+
+	# for child in get_children():
+	return true
+		
+func check_able_puton(curr_clothing : Sticker) -> bool:
+	for child in outfit.get_children():
+		if child.clothing_category == curr_clothing.clothing_category:
+			return false
+	return true
+		

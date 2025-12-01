@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buyxmysxwkotb"
-path="res://.godot/imported/sonia_pants_2.png-205d090c5c45d6b597b63ee1fe282afa.ctex"
+path="res://.godot/imported/sonia_pants_2.png-42230c0b49aa447b976bda31a0e8f934.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Clothes/sonia/sonia_pants_2.png"
-dest_files=["res://.godot/imported/sonia_pants_2.png-205d090c5c45d6b597b63ee1fe282afa.ctex"]
+source_file="res://Assets/Clothes/Sonia/sonia_pants_2.png"
+dest_files=["res://.godot/imported/sonia_pants_2.png-42230c0b49aa447b976bda31a0e8f934.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://banla00u8afog"]
 
-[ext_resource type="Texture2D" uid="uid://cij56akod45ja" path="res://Assets/Clothes/sonia/sonia_shirt_0.png" id="1_oijvl"]
+[ext_resource type="Texture2D" uid="uid://cij56akod45ja" path="res://Assets/Clothes/Sonia/sonia_shirt_0.png" id="1_oijvl"]
 [ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://Scripts/sticker.gd" id="2_d5732"]
 
 [node name="SoniaShirt0" type="TextureRect"]
