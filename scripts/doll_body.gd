@@ -36,6 +36,7 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 	var sticker: Sticker = data as Sticker
 	if check_able_puton(sticker):
 		sticker.reparent(outfit)
+		sticker.dollbody = self
 		sticker.position = sticker.lock_point
 		if check_outfit():
 			submitButton.visible = true

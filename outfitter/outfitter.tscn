@@ -2,18 +2,18 @@
 
 [ext_resource type="Script" uid="uid://b2n2s5jtaonxk" path="res://outfitter/outfitter.gd" id="1_p0oug"]
 [ext_resource type="PackedScene" uid="uid://brdbwaoj6gogs" path="res://dressup/sticker/sticker.tscn" id="2_d44lc"]
-[ext_resource type="Texture2D" uid="uid://bi5dsm6v5bl2o" path="res://Assets/Clothes/Sonia/sonia_skirt_0.png" id="3_yi8d6"]
-[ext_resource type="Texture2D" uid="uid://ikgi3djjbxtt" path="res://Assets/Dolls/Sonia/sonia_doll.PNG" id="4_yi8d6"]
+[ext_resource type="Texture2D" uid="uid://dcgiu7jxpgjkn" path="res://Assets/Clothes/Adrienne/adrienne_skirt_3.png" id="3_yi8d6"]
+[ext_resource type="Texture2D" uid="uid://dej7ryrk38u6" path="res://Assets/Dolls/Adrienne/adrienne_model.png" id="4_d44lc"]
 
 [node name="Outfitter" type="Node" node_paths=PackedStringArray("doll", "outfit")]
 script = ExtResource("1_p0oug")
 doll = NodePath("Doll")
 outfit = NodePath("Doll/Outfit")
 sticker_scene = ExtResource("2_d44lc")
-sticker_folder = "res://dressup/dolls/sonia/stickers/"
-sticker_file_name = "sonia_skirt_0"
-sticker_node_name = "SoniaSkirt0"
-clothing_category = 1
+sticker_folder = "res://dressup/dolls/adrienne/stickers/"
+sticker_file_name = "adrienne_skirt_3"
+sticker_node_name = "AdrienneSkirt3"
+correct = true
 lock_point_texture = ExtResource("3_yi8d6")
 
 [node name="Doll" type="Control" parent="."]
@@ -32,5 +32,5 @@ metadata/_edit_lock_ = true
 layout_mode = 0
 offset_right = 792.0
 offset_bottom = 2048.0
-texture = ExtResource("4_yi8d6")
+texture = ExtResource("4_d44lc")
 metadata/_edit_lock_ = true

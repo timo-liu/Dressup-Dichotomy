@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck25aqkcgp6tf"]
+
+[ext_resource type="Texture2D" uid="uid://dcgiu7jxpgjkn" path="res://Assets/Clothes/Adrienne/adrienne_skirt_3.png" id="1_1j3uq"]
+[ext_resource type="Script" uid="uid://c4d1yompe3hk7" path="res://Scripts/sticker.gd" id="2_a76e8"]
+
+[node name="AdrienneSkirt3" type="TextureRect"]
+z_index = 3
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_1j3uq")
+script = ExtResource("2_a76e8")
+lock_point = Vector2(3.9999998, 251.99998)
+correct = true
