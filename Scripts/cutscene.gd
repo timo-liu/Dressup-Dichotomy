@@ -78,10 +78,15 @@ func _input(event: InputEvent) -> void:
 			typing = false
 		else:
 			current_counter += 1
-			if current_counter < len(GodScript.dialogues[GodScript.current_char]):
+			if current_counter < len(GodScript.dialogues[GodScript.current_char]) and not GodScript.ending:
+				begin_play()
+			elif current_counter < len(GodScript.endings[GodScript.current_ending]) and GodScript.ending:
 				begin_play()
 			else:
-				if not GodScript.current_char == "PLAYER":
-					GodScript.switch_to_dressup()
+				if not GodScript.ending:
+					if not GodScript.current_char == "PLAYER":
+						GodScript.switch_to_dressup()
+					else:
+						GodScript.switch_to_select()
 				else:
 					GodScript.switch_to_select()

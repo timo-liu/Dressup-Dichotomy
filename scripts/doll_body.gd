@@ -68,5 +68,8 @@ func _on_submit_button_pressed() -> void:
 		if child is not Sticker:
 			continue
 		if not child.correct:
+			print("WRONG")
 			GodScript.switch_to_ending(false)
+			return
 	GodScript.switch_to_ending(true)
+	return

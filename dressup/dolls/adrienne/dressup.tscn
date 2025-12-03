@@ -101,7 +101,7 @@ offset_top = 1.0
 offset_right = 1153.8
 offset_bottom = 648.0
 theme = SubResource("Theme_4i4fu")
-current_tab = 1
+current_tab = 0
 tabs_visible = false
 script = ExtResource("7_tf7qr")
 tops_tab = NodePath("TopsTab")
@@ -112,7 +112,6 @@ metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
 [node name="TopsTab" type="TextureRect" parent="Notebook"]
-visible = false
 layout_mode = 2
 texture = ExtResource("1_tab7j")
 expand_mode = 1
@@ -126,14 +125,6 @@ offset_left = 76.0
 offset_top = 340.0
 offset_right = 783.0
 offset_bottom = 975.0
-correct = false
-
-[node name="AdrienneShirt2" parent="Notebook/TopsTab" instance=ExtResource("8_rwdc2")]
-layout_mode = 0
-offset_left = 461.0
-offset_top = 122.0
-offset_right = 950.0
-offset_bottom = 769.0
 correct = false
 
 [node name="AdrienneShirt3" parent="Notebook/TopsTab" instance=ExtResource("9_7okdk")]
@@ -151,7 +142,17 @@ offset_right = 917.0
 offset_bottom = 969.0
 correct = false
 
+[node name="AdrienneShirt2" parent="Notebook/TopsTab" instance=ExtResource("8_rwdc2")]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 109.0
+offset_right = 952.0
+offset_bottom = 756.0
+lock_point = Vector2(-67, -185)
+correct = false
+
 [node name="BottomsTab" type="TextureRect" parent="Notebook"]
+visible = false
 layout_mode = 2
 texture = ExtResource("2_tmhhk")
 expand_mode = 1
